@@ -1,0 +1,642 @@
+GETCHA
+Chapter 1 Cutscene Scripts
+Ashes of Oath
+
+Format Note
+This file converts the Chapter 1 storyboard into mission-ready cutscene and dialogue beats. Each mission section includes a pre-mission cinematic, battle-start flavor, and post-mission outcome. Optional camp scenes are included where they add character development.
+
+
+OPENING CUTSCENE
+Cutscene ID: c1_opening_ceremony
+Location: High Court of the capital
+Cast: Aric, Lyria, The Lord Marshall, Captain Elowen, court assembly
+
+Visual Direction
+Wide shot over the capital at dawn. White towers blaze gold in morning light. Crimson and ivory banners lift in the wind. Courtiers in ceremonial regalia line the court. Music is noble, triumphant, and just slightly too polished.
+
+Script
+The Lord Marshall: "Aric, shield of the realm, you have carried this kingdom through fire and returned its people to peace time and again."
+
+Aric: "I have only done my duty, my lord."
+
+Lyria, aside: "If they carve that on your grave, I am haunting the sculptor."
+
+Aric: "You assume I plan to die first."
+
+Lyria: "I assume if you do, it will be while frowning heroically."
+
+Light court laughter. Aric almost smiles.
+
+Captain Elowen enters quickly, kneels, and presents a sealed dispatch.
+
+Captain Elowen: "Urgent reports from Whispering Woods. Raids at Verdant Clearing. Missing scouts. Survivors claim the attackers moved with military precision."
+
+The Lord Marshall: "Then we act before fear spreads faster than truth. Aric, go at once. Keep the force small. Quiet answers are often the cleanest."
+
+He steps close and lowers his tone.
+
+The Lord Marshall: "Bring them home. The realm still needs its shield."
+
+Aric kneels.
+
+Aric: "By your command."
+
+End Beat
+Close on the Lord Marshall's hand on Aric's shoulder. Hold one beat too long. Music dips into unease.
+
+
+MISSION 001
+Mission: Into the Clearing
+Location: Verdant Clearing
+
+Pre-Mission Cinematic
+Aric and Lyria survey flattened grass, crude signal totems, and fresh tracks cut through morning mist.
+
+Lyria: "Goblin scouts, wolves, and a perimeter line. Someone taught this patch of forest manners. Violent ones."
+
+Aric: "Then we break the line before they warn the next nest."
+
+Lyria: "That was almost witty. I should mark the date."
+
+Aric: "Focus."
+
+Battle Start Lines
+Aric: "No signals leave this clearing."
+Lyria: "Stars above, try to keep up."
+
+Post-Mission Outcome
+A wounded villager is pulled from an overturned cart.
+
+Villager: "They did not raid for food. They watched the road. They wanted us moving."
+
+Aric: "A screen operation. Not random violence."
+
+Lyria: "That would explain why I hate this already."
+
+
+OPTIONAL CAMP SCENE 001
+Location: Forward camp outside Verdant Clearing
+
+Lyria hands Aric a cup of field tea.
+
+Lyria: "If you stare at that fire any harder, it will surrender."
+
+Aric: "I am thinking."
+
+Lyria: "No. You are brooding. Different posture."
+
+Aric: "Do you ever stop making light of things?"
+
+Lyria: "Only when the dark is winning."
+
+Aric finally smiles.
+
+
+MISSION 002
+Mission: The Pack's Cry
+Location: Deeper Whispering Woods
+
+Pre-Mission Cinematic
+Wolf howls echo in measured intervals. A hidden clutch of villagers is found sheltering inside split roots.
+
+Elderly Villager: "Our scouts vanished near marked trees. We found this."
+
+She hands Aric a scrap bearing a strange, crown-like insignia.
+
+Lyria: "Too neat for bandits. Too deliberate for beasts."
+
+Aric: "Then whoever is behind this wants to be mistaken for chaos."
+
+Battle Start Lines
+Aric: "Protect the civilians. Break the herd pattern."
+Lyria: "And if anyone has complaints, they can file them with my magic."
+
+Post-Mission Outcome
+Aric recovers a stamped leather token from a fallen handler.
+
+Aric: "Missing scouts. Marked routes. Coordinated attacks."
+
+Lyria, quieter: "I would prefer monsters. People choose this."
+
+
+MISSION 003
+Mission: Edge of the Woods
+Location: Forest boundary
+
+Pre-Mission Cinematic
+A masked figure waits on a fallen trunk where the woods thin into open ground.
+
+Kain: "If I meant to kill you, General, we would not be having this conversation."
+
+Aric: "Name yourself."
+
+Kain: "Kain. I track lies for a living. Yours have been expensive."
+
+Lyria: "I cannot decide if that was dramatic or rude."
+
+Kain: "It was efficient."
+
+He shows Aric ledger scraps tied to supply payments and false tax routes.
+
+Kain: "Someone is funding these raids. Not with gutter coin. With real backing."
+
+Battle Start Lines
+Kain: "I will take the archers. Try not to die before I return."
+Aric: "Stay in formation or leave."
+Lyria: "Oh, this will be fun."
+
+Post-Mission Outcome
+Kain tosses Aric a military-minted coin.
+
+Kain: "Capital issue. Your enemy shops well."
+
+Aric: "Why bring this to me?"
+
+Kain: "Because if rot reaches the throne, the kingdom needs one honest man close enough to smell it."
+
+
+OPTIONAL CAMP SCENE 002
+Location: Woodland camp
+
+Lyria: "You could have opened with something less hostile."
+
+Kain: "I could also juggle knives. Neither would improve the truth."
+
+Aric: "Enough. If you are staying, you will speak plainly."
+
+Kain: "Plainly? Fine. I do not trust your crown. I trust your disgust. That is why I am here."
+
+
+TRANSITION CUTSCENE
+Cutscene ID: c1_elowen_authority
+Location: Forward command road
+Cast: Aric, Lyria, Kain, Captain Elowen
+
+Captain Elowen arrives with fresh reports and a private royal seal.
+
+Captain Elowen: "Three attacks. Same hour. Different routes. Whoever designed this wanted you stretched thin."
+
+Lyria: "Expanded authority? That is no small favor."
+
+Kain leans in toward the parchment.
+
+Kain: "Fresh wax. Wrong smell."
+
+Aric: "Explain."
+
+Kain: "Ash. Volcanic. Not city resin. This letter passed through ember country before it reached you."
+
+End Beat
+Aric tightens his hand around the seal.
+
+
+MISSION 004
+Mission: Mushroom Labyrinth
+Location: Deeproot Hollow
+
+Pre-Mission Cinematic
+The party enters luminous root tunnels and finds Sera defending trapped civilians in a narrow corridor.
+
+Sera: "If you are here to prey on the helpless, line up and die in order."
+
+Lyria: "I like her immediately."
+
+Aric steps beside Sera and raises his weapon.
+
+Aric: "We are here to get them out."
+
+Battle Start Lines
+Sera: "Hold the corridor. No one passes us."
+Aric: "Move the wounded behind our line."
+
+Post-Mission Outcome
+Sera binds a child's wound before answering Aric.
+
+Sera: "You chose the trapped before the pursuit. That is not how most officers think."
+
+Aric: "Then most officers think wrongly."
+
+Sera: "I will accompany you. For now."
+
+
+OPTIONAL CAMP SCENE 003
+Location: Deeproot camp
+
+Sera: "Rank is not honor. It is obligation."
+
+Aric: "I know."
+
+Sera: "Then remember it when the truth asks more of you than obedience does."
+
+
+MISSION 005
+Mission: Root Warrens
+Location: Lower warrens and canopy break
+
+Pre-Mission Cinematic
+Bandits spring an ambush from the upper walkways. Lightning answers before Aric can issue the second order.
+
+Zephyr drops into frame in a burst of stormlight.
+
+Zephyr: "You all looked terribly outnumbered. It offended my sense of balance."
+
+Kain: "Who makes an entrance during an ambush?"
+
+Zephyr: "People with standards."
+
+Battle Start Lines
+Zephyr: "I will take the loud route."
+Kain: "That narrows nothing down."
+
+Post-Mission Outcome
+Zephyr bows extravagantly.
+
+Zephyr: "Zephyr. Storm caller. Occasional hero. Reliable threat to dull conversation."
+
+Lyria: "You will fit in terribly well."
+
+
+OPTIONAL CAMP SCENE 004
+Location: Root Warren camp
+
+Kain: "Stealth gets you through alive."
+
+Zephyr: "Style gets remembered."
+
+Kain: "By your enemies."
+
+Zephyr: "Exactly. Fear is branding."
+
+Sera nearly smiles.
+
+
+MISSION 006
+Mission: Hollow's Heart
+Location: Deep root chamber
+
+Pre-Mission Cinematic
+A swamp shaman channels hostile aether at the chamber's center beneath stolen banners and sealed packets.
+
+Lyria: "This is not a border ritual. Someone taught him structure."
+
+Aric: "Then we end it here and take whatever answers remain."
+
+Battle Start Lines
+Aric: "Break the altar."
+Lyria: "With pleasure."
+
+Post-Mission Outcome
+Brother Thane examines recovered orders with shaking hands.
+
+Brother Thane: "This royal cipher should not exist outside the vault. Not in the field. Not like this."
+
+Aric: "Can it be forged?"
+
+Brother Thane: "Not cleanly. Either someone stole the court's authority... or the court gave it."
+
+Tag Scene
+Aric later receives a private letter from the Lord Marshall.
+
+The Lord Marshall's Letter: "Trust no one beyond your command. Move for Ashfield Pass. Burn what must be burned before it reaches the heart."
+
+Kain: "Fresh seal. Same ash smell. Someone wants you walking into fire with your eyes closed."
+
+
+PART I ENDING BEAT
+Location: Departure from Deeproot Hollow
+
+Lyria: "You are thinking too loudly again."
+
+Aric: "Every road ahead ends in a worse question."
+
+Kain: "Good. Questions survive longer than faith."
+
+
+MISSION 007
+Mission: Smoldering Trail
+Location: Ashfield Pass
+
+Pre-Mission Cinematic
+The party reaches a shattered barricade and finds Draven holding the line with battered survivors.
+
+Draven: "About time. I was starting to think the capital had run out of competent help."
+
+Aric: "Draven."
+
+Draven: "Still impossible to bury, I see."
+
+Battle Start Lines
+Draven: "Hit hard. Mourn later."
+Aric: "Protect the survivors."
+
+Post-Mission Outcome
+Aric looks over Draven's fallen unit.
+
+Aric: "How many?"
+
+Draven: "Enough. We held for civilians. No order told us to. We did it because someone had to be better than the order."
+
+
+OPTIONAL CAMP SCENE 005
+Location: Ashfield camp
+
+Draven: "We used to think loyalty solved everything."
+
+Aric: "Without loyalty, the realm falls apart."
+
+Draven: "And if loyalty is what they use to steer good men into evil?"
+
+Aric does not answer.
+
+
+MISSION 008
+Mission: Bandit Crossing
+Location: Raider toll bridge
+
+Pre-Mission Cinematic
+The bridge is dressed in iron chains, warning stakes, and bodies left as trophies.
+
+Kain: "Too obvious. They want us angry. Angry soldiers miss traps."
+
+Draven: "Cautious soldiers leave innocents to bleed at toll gates."
+
+Sera: "Argue after the living are safe."
+
+Lyria quietly pulls Aric aside.
+
+Lyria: "I know that look."
+
+Aric: "Which one?"
+
+Lyria: "The one where you think holding everyone together means breaking privately."
+
+Aric finally says it.
+
+Aric: "I am afraid, Lyria."
+
+Lyria: "Good. It means your heart still knows this matters."
+
+Battle Start Lines
+Aric: "Take the bridge and keep the rear clear."
+Zephyr: "I can do dramatic and practical at the same time."
+
+Post-Mission Outcome
+The crossing is secured, but no one celebrates.
+
+Kain: "We won. That is not the same thing as being safe."
+
+
+MISSION 009
+Mission: Scorched Watchtower
+Location: Enemy relay tower
+
+Pre-Mission Cinematic
+Supply crates are stacked in military order behind burned stone and hide screens.
+
+Lyria: "That is quartermaster discipline. Not bandit instinct."
+
+Aric: "Then someone taught them how to wage a campaign."
+
+Battle Start Lines
+Sera: "Take the stairs. Hold each landing."
+Kain: "I will find the signal post."
+
+Post-Mission Outcome
+Lyria breaks open a crate and reveals a secret armory mark.
+
+Lyria: "Aric... this belongs to royal stock."
+
+Aric: "No."
+
+Kain: "That word is falling behind events."
+
+Sera: "If truth condemns the throne, what does duty become?"
+
+
+MISSION 010
+Mission: Iron Gate
+Location: Outer defenses of Cinder Keep
+
+Pre-Mission Cinematic
+Ancient runes awaken across the keep's gatehouse. Stone golems rise as if answering a command sent years ago and triggered now.
+
+Mirel appears amid survivors, drawing water over burned skin and clearing ash-choked lungs.
+
+Mirel: "Questions later. Lift with me now."
+
+After the wounded are moved, she addresses Aric.
+
+Mirel: "I watched men in royal colors burn villages from the safe side of the wind. They left one escape route open. Panic corridors."
+
+Aric: "You are certain?"
+
+Mirel: "I am certain enough to be angry."
+
+Battle Start Lines
+Mirel: "I will cool the magma channels. Move when I say."
+Aric: "Break the gate before the runes re-align."
+
+Post-Mission Outcome
+Lyria studies the keep walls.
+
+Lyria: "These patterns are not only defensive. They gather aether inward."
+
+Kain: "Toward what?"
+
+Lyria: "I think we are walking toward the answer."
+
+
+OPTIONAL CAMP SCENE 006
+Location: Shrine ruin near Cinder Keep
+
+Sera: "I was taught faith would make the righteous path visible."
+
+Mirel: "And has it?"
+
+Sera: "No. But it has kept me walking when the path vanished."
+
+Mirel: "Then perhaps it has done enough for tonight."
+
+
+MISSION 011
+Mission: The Armory
+Location: Sealed armory corridors
+
+Pre-Mission Cinematic
+The party finds civilians cornered by venom traps and basilisks. A dark figure reaches them first.
+
+Draven: "There. Cursed steel."
+
+Kain: "Watch first. Judge second."
+
+Vex cuts down hostile sentries, then takes venom across his arm to clear a path for the trapped civilians.
+
+Vex: "Move."
+
+Aric: "Why help us?"
+
+Vex: "Because what wakes below this keep will not care who fed it. Only who remains."
+
+Battle Start Lines
+Vex: "Do not slow me down."
+Zephyr: "Some people really do not rehearse small talk."
+
+Post-Mission Outcome
+Vex vanishes before the party can stop him.
+
+Draven: "A monster can spare a child and still be a monster."
+
+Kain: "So can a king."
+
+
+OPTIONAL CAMP SCENE 007
+Location: Staging chamber before Furnace Hall
+
+Aric: "I believed service made the hand clean."
+
+Lyria: "Service does not decide that. Choice does."
+
+Aric: "I am afraid I have been a weapon for the wrong cause."
+
+Lyria: "A weapon would never ask. A good man does."
+
+
+MISSION 012
+Mission: Furnace Hall
+Location: Magma-lit throne room of Cinder Keep
+
+Pre-Mission Cinematic
+Twinfang Chief waits on a black-iron dais beneath hanging chains and roaring furnaces. The room is a savage mockery of royal splendor.
+
+Twinfang Chief: "So the crown sends its favorite hound. Tell me, Aric, when they pointed you here, did you wag or bare teeth?"
+
+Aric: "I came for the people you butchered."
+
+Twinfang Chief laughs.
+
+Twinfang Chief: "Then you came for the work of better masters than me."
+
+Battle Start Lines
+Aric: "End this. Now."
+Twinfang Chief: "Come prove you were worth the leash."
+
+Mid-Battle Beat
+The Rage Cyclops crashes through a furnace gate. Draven takes a devastating blow meant for Aric.
+
+Aric: "Draven!"
+
+Draven: "Do not waste the hit. Finish it."
+
+Post-Mission Outcome
+The Twinfang Chief falls. In the quiet after battle, the party uncovers sealed orders naming Aric's unit expendable.
+
+Lyria: "Aric..."
+
+Aric reads the signature and goes still.
+
+Aric: "No. There is an explanation. There has to be."
+
+Kain: "There usually is. It is just never a kind one."
+
+Aric folds the document with deliberate care.
+
+Aric: "We return to the capital. I will hear the truth from his own mouth."
+
+
+FINALE CUTSCENE 001
+Cutscene ID: c1_return_and_honor
+Location: Capital court
+Cast: Full party, The Lord Marshall, assembled court
+
+Visual Direction
+Mirror the opening ceremony, but with colder color grading beneath the gold. Splendor should feel suspect now.
+
+Script
+The Lord Marshall: "Behold the heroes of Cinder Keep. Behold the shield of the realm."
+
+Citizens cheer. Flower petals fall.
+
+The Lord Marshall embraces Aric.
+
+The Lord Marshall, low: "I knew you would endure."
+
+Aric does not return the embrace immediately.
+
+
+FINALE CUTSCENE 002
+Cutscene ID: c1_private_audience
+Location: Descent beneath Cinder Keep
+Cast: Full party, The Lord Marshall
+
+The Lord Marshall: "A final cleansing remains. A greater evil sleeps beneath the keep. Only your company has the strength to end it."
+
+Sera: "Then why send no priesthood, no wardens, no engineers?"
+
+The Lord Marshall: "Because I require certainty, not committee."
+
+The chamber doors open onto ancient runes pulsing like buried heartbeats.
+
+
+FINALE CUTSCENE 003
+Cutscene ID: c1_deception
+Location: Hidden ritual chamber
+
+Red rune-chains erupt from the floor and bind the party.
+
+Aric: "This is no demon ward."
+
+The Lord Marshall: "No. It is a threshold."
+
+Aric: "You used us."
+
+The Lord Marshall: "I used history. You were merely its finest instrument."
+
+Lyria: "He loved you."
+
+The Lord Marshall: "And because he did, he never wavered. Loyalty is the purest key."
+
+Sera: "You dressed evil as duty. There is no grace left in you."
+
+Kain: "I told you kings lie. I just hoped this one did not."
+
+
+FINALE CUTSCENE 004
+Cutscene ID: c1_escape_and_loss
+Location: Collapsing ritual chamber
+
+Vex steps from shadow and drives his cursed blade into the core sigil.
+
+Vex: "You mistake chains for control."
+
+The rune lock shatters. The chamber begins to collapse.
+
+Aric: "Vex, with us!"
+
+Vex: "Go."
+
+Zephyr holds a falling arch with storm pressure.
+
+Zephyr: "I would like it noted that this counts as heroic restraint."
+
+Mirel: "Move first. Joke later."
+
+Kain glances back through smoke but cannot see Vex.
+
+
+FINALE CUTSCENE 005
+Cutscene ID: c1_second_march
+Location: Exterior of Cinder Keep
+
+The sky tears open with a crimson fracture over the keep.
+
+The Lord Marshall's Voice: "Let the second march begin."
+
+Lyria, shaken: "What do we do now?"
+
+Aric, looking up at the wound in the sky: "Now we tell the truth. Then we stop him."
+
+Final Shot
+Two distant silhouettes watch the fracture from a black ridge far beyond the ruin.
+
+Text Card
+TO BE CONTINUED IN CHAPTER 2 - THE SHATTERED MARCH
