@@ -1,0 +1,16 @@
+{
+  "id": "c1_escape_and_loss",
+  "type": "finale_cutscene",
+  "location": "Collapsing ritual chamber",
+  "dialogue": {
+    "scene": [
+      { "speaker": "Vex", "line": "You mistake chains for control." },
+      { "speaker": "Aric", "line": "Vex, with us!" },
+      { "speaker": "Vex", "line": "Go." },
+      { "speaker": "Zephyr", "line": "I would like it noted that this counts as heroic restraint." },
+      { "speaker": "Mirel", "line": "Move first. Joke later." },
+      { "speaker": "Kain", "line": "I cannot see him in the smoke." },
+      { "speaker": "Aric", "line": "Keep moving. We do not lose anyone else in this chamber." }
+    ]
+  }
+}

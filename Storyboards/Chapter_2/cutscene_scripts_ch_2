@@ -1,0 +1,952 @@
+GETCHA
+Chapter 2 Cutscene Scripts
+The Shattered March
+
+Format Note
+This file converts the Chapter 2 storyboard into mission-ready cutscene and dialogue beats. Each mission section includes a pre-mission cinematic, battle-start flavor, and post-mission outcome. Optional camp scenes are included where they add character development. Chapter 2 continues directly from the Cinder Keep collapse and follows Vex as the chapter's second protagonist.
+
+
+OPENING CUTSCENE
+Cutscene ID: c2_vex_returns
+Location: Tithe station ruins below Cinder Keep, pre-dawn
+Cast: Aric, Lyria, Kain, Mirel, full surviving party, Vex
+
+Visual Direction
+Dawn ash-light over a makeshift camp. The eastern horizon bleeds crimson from the fracture seam. No birds. Fires burn low. Aric stands at the camp's edge facing the fracture, sword still in hand. Lyria approaches behind him.
+
+Script
+Lyria: "The fracture has not grown in twelve hours."
+
+Aric: "That we can see."
+
+Lyria: "Yes. That we can see."
+
+Lyria, softer: "He is not coming back, Aric. The Lord Marshall I mean. The one you believed in."
+
+Aric: "I know."
+
+Kain: "Someone is in the rubble field. Moving wrong. Get up."
+
+Weapons draw. Then Mirel says it before the rest find the nerve.
+
+Mirel: "That is Vex."
+
+A figure drags itself from broken stone. One arm pressed to his side. Curse-light gone. He walks toward the fire like a man who has refused a great deal of darkness tonight and has almost nothing left.
+
+Aric crosses half the distance in three steps and takes his weight.
+
+Aric: "Where have you been?"
+
+Vex: "Below."
+
+Lyria, low, only for Aric: "There is something in the void-mark that I do not have a name for. Not decay. More like occupation. I am going to figure out what that is."
+
+Mirel moves without being asked, already at Vex's other side, already assessing.
+
+End Beat
+The camp receives Vex as if he always belonged there. He does not know it yet. Hold on his face as the fire reaches him.
+
+
+INTERLUDE 001
+Cutscene ID: c2_cost_of_the_curse
+Location: Camp shelter corner
+Cast: Vex, Mirel, Kain
+
+Mirel tends Vex's wounds in professional quiet. The spiral scar burned into his forearm has deepened.
+
+Mirel: "Does it hurt?"
+
+Vex: "Differently than before."
+
+Mirel: "What did you do to it?"
+
+Vex: "I put the blade between the Compact and the ritual. The rune lock discharged through the steel and then through me."
+
+Mirel: "Why?"
+
+Vex: "They had the children clear."
+
+Mirel wraps the scar without another word.
+
+Kain, from across the shelter: "You are alive. The cursed blade went dark. Those two facts are in tension."
+
+Vex: "Still watching where others refuse to look."
+
+Kain: "I find more truth there."
+
+Vex: "So do I."
+
+
+TRANSITION CUTSCENE
+Cutscene ID: c2_march_doctrine
+Location: Eastern road toward Shattered Spire
+Cast: Aric, Draven, full party
+
+Visual Direction
+Long road, wrong sky. Cinder Keep recedes behind them while the fracture glow deepens ahead. The formation has reorganized itself without discussion: Aric at point, Vex near the front edge, everyone moving like people who have already spent too much and will spend more.
+
+Script
+Draven falls into step beside Aric on a long flat stretch.
+
+Draven: "What were we serving?"
+
+Aric: "I have been asking that."
+
+Draven: "You know the answer. You just do not like the verb. We were used. Now we are not. The distinction matters."
+
+Aric: "And what do we serve now?"
+
+Draven: "The people who's name's you still read, who cannot fight something with a title older than the realm."
+
+End Beat
+Ahead, Cinder Keep's broken silhouette recedes. The fracture glow fills its place.
+
+
+PART I: CRUMBLED COURTS
+
+
+MISSION 013
+Mission: Breached Wall
+Location: Outer Ramparts of Shattered Spire
+
+Pre-Mission Cinematic
+Two figures step from the ridge above the approach road without concealing themselves. One is armored in flame-edged plate. The other moves as if she has already seen the room.
+
+Cassian: "Eight from the southwest road. One with a dead blade. All surviving post-Cinder. You are the general."
+
+Aric: "Former."
+
+Cassian: "Cassian. Ember Warden, Oath-Bound Compact."
+
+Selene steps forward.
+
+Selene: "Whatever feeds on that fracture is old enough to have watched kingdoms rise whose names you have never heard. Six hours from now it will know the Ramparts have been breached. The window between that event and the Void Threshold is the narrowest the Compact has ever been given."
+
+Zephyr, aside to Lyria: "I like her."
+
+Lyria: "We finally agree."
+
+Aric: "Oath-Bound. What did you give up?"
+
+Cassian: "Everything that was ours to give freely."
+
+He holds Aric's gaze one moment longer.
+
+Cassian: "The Compact was built to work alongside Oath-Weavers specifically. People whose binding is written into them rather than cast by them. The Compact does not produce them. It finds them."
+
+He does not look at Aric when he says the last part.
+
+Battle Start Lines
+Aric: "Break the sentinel formations. Do not let them reset."
+Aric: "We serve the people still behind us. Move."
+Cassian: "I have the attack patterns. Follow my lead on the first ring."
+Selene: "Step where I say. The ground here has memory."
+
+Post-Mission Outcome
+Selene kneels over a shattered rune sentinel and sets her palm flat on its face.
+
+Selene: "These were not set to defend the Spire. They were set to defend against it. The Compact that built them suppressed the Tyrant's first emergence. They were buying time."
+
+Aric: "For what?"
+
+Selene: "For us."
+
+
+OPTIONAL CAMP SCENE 001
+Location: Rampart shelter chamber
+Cast: Selene, Lyria, Kain
+
+Lyria brings two cups of field tea and sets one near Selene without asking.
+
+Lyria: "What do you see when you look like that?"
+
+Selene: "Thread. Every possible next moment leaves one. The ones that survive long enough to see are the ones worth walking toward."
+
+Lyria: "What do ours look like?"
+
+Selene, first hesitation of the chapter: "Bright. And expensive."
+
+Lyria: "Are we going to lose someone?"
+
+Selene: "Cost is not always lives. Sometimes it is the version of yourself you entered with."
+
+Kain, from the shadows: "That was almost comforting."
+
+Selene: "I will try harder next time."
+
+The corner of Kain's mouth moves. Almost.
+
+
+MISSION 014
+Mission: Undying Watch
+Location: Central Rampart chamber, the dormant idol
+
+Pre-Mission Cinematic
+A ten-meter granite idol stands at the chamber's center, hands open skyward. It does not aggress. It drinks.
+
+Cassian: "The idol is a relay. The fracture sends a signal down through the stone and this amplifies it into the Gate. Stop the idol and the Gate stops receiving its opening instruction."
+
+Draven: "Instructions to open from the inside."
+
+Cassian: "Yes."
+
+Battle Start Lines
+Cassian: "Outer ring first. Do not let the constructs reach the sigil team."
+Lyria: "I have the geometry. Sixty seconds at the core."
+Vex, watching the idol, blade vibrating: "The curse reads it."
+
+Mid-Battle Beat
+Vex approaches the core sigil. His dead blade vibrates without sound.
+
+Vex: "When I am near the relay the curse responds. Not awakened. Aligned. They share origin."
+
+Selene: "Because they do. Kneel before the idol. Let it read the blade. The Compact will recognize its counter and close the channel."
+
+Vex: "I am... a key."
+
+Selene: "You have always been a key. The door is what changed."
+
+Post-Mission Outcome
+The idol's eyes go dark. The energy cuts.
+
+Selene: "The Gate stopped receiving the signal. We have until the Tyrant recalibrates. Hours, not days."
+
+Cassian, to Aric: "He is more important to this than you know yet."
+
+Aric: "Vex?"
+
+Cassian: "He carries the closest thing the void has to a conscience. The Tyrant will want to speak to him."
+
+
+OPTIONAL CAMP SCENE 002
+Location: Rampart camp after the idol
+Cast: Cassian, Aric
+
+Aric: "You said the Oath-Bound compact had a cost."
+
+Cassian: "Choice. All choice options available to Oath-Bound were removed at the binding. We cannot retreat once the fracture is assessed critical. We cannot serve any sovereign during active threshold containment. We cannot decide not to return when sent."
+
+Aric: "Do you regret it?"
+
+Cassian: "I regret that I was young enough to not know what I was giving when I gave it."
+
+He puts his pauldron back on.
+
+Cassian: "But the fracture is open. So I am glad I did."
+
+
+MISSION 015
+Mission: Commander's Vault
+Location: Upper Rampart vault chamber
+
+Pre-Mission Cinematic
+Inside the vault archive: a man with a decoded dispatch in one hand and a stylus in the other, leaning against the encoding table as if they interrupted a translation.
+
+Kain goes very still.
+
+Kain: "I know you."
+
+Kael: "You knew me. Different contract at the time."
+
+Kain: "How many contracts changed hands since then?"
+
+Kael: "More than are comfortable to enumerate. But this one changes sides on its own."
+
+He sets the dispatch on the table and steps back. It is proof the crimson fracture was induced. Opened deliberately as a keyhole.
+
+Aric: "Who hid this here?"
+
+Kael: "Someone who built the Ramparts to keep the door shut, discovered it had been opened anyway, and hid the evidence where the first competent enough person to reach this summit would find it."
+
+He extends the cipher key.
+
+Kael: "According to the archivist, that is you."
+
+Aric: "Which archivist?"
+
+Kael: "Brother Thane. He said to give it to the general who still reads the names."
+
+Battle Start Lines
+Kael: "The warlock duo at the exit is coordinated. I will collapse their formation from inside."
+Aric: "Hold the archive door."
+Kain: "Do not improvise."
+Kael: "I only improvise the ending."
+
+Post-Mission Outcome
+Kain and Kael leave the vault in parallel. Neither speaks.
+
+Kain: "The contract before this one."
+
+Kael: "Not the right time."
+
+Kain: "There never will be."
+
+Kael: "I know."
+
+He picks up his blade and stands beside Aric.
+
+Kael: "I have not been on the right side of anything in a long time. I am electing to change that. I work independently from here."
+
+
+TRANSITION CUTSCENE
+Cutscene ID: c2_gate_approach
+Location: Ridge between the Outer Ramparts and the Hollow Gate
+Cast: Full party, Selene
+
+The Hollow Gate district opens ahead: void-stone walls, black-veined and smooth, catching the fracture glow like mirrors aimed at fire.
+
+Selene stops walking.
+
+Selene: "The Gate was built to keep the Tyrant in. Every inscription on the inner void-stone reads inward. Something made the original builders leave before the final ward was set."
+
+Draven: "How unfinished?"
+
+Selene: "Functional. But the door can be pushed from inside."
+
+Zephyr: "And the Tyrant has been pushing."
+
+Selene: "For a very long time."
+
+
+PART II: THE HOLLOW GATE
+
+
+MISSION 016
+Mission: Twilight Approach
+Location: Outer void-stone path, civilian evacuation route
+
+Pre-Mission Cinematic
+Behind a collapsed arch, surrounded by the last civilians who could not evacuate, a woman with water-sigil cuffs finishes setting a ward-boundary before looking up.
+
+Nadia: "You are soldiers. Good. There are twelve more civilians in the eastern alcove. Cross my ward line and I will assume you are hostile."
+
+Draven: "We are on your side."
+
+Nadia: "Everyone says that. Prove it by clearing the alcove before those chanting ones reach the arch."
+
+Sera steps forward with the expression of someone who has found the most direct mutual understanding.
+
+Sera: "We will. Hold your ward."
+
+Nadia looks at Sera for exactly two seconds.
+
+Nadia: "All right."
+
+Battle Start Lines
+Aric: "Cassian and Sera on the chanting positions. Everyone else: alcove extraction."
+Sera: "Nadia, hold your boundary. We come to you."
+Kael: "I have the warlock formation flanks."
+
+Post-Mission Outcome
+The civilians are clear. Nadia performs a final ward sweep and drops the boundary.
+
+Nadia: "Sixty-eight civilians evacuated from this corridor over thirty hours. Alone."
+
+Aric: "Are you hurt?"
+
+Nadia: "Yes. Are you going deeper into the Gate?"
+
+Aric: "Yes."
+
+Nadia: "Then I am coming. There will be more people deeper in. There always are."
+
+
+OPTIONAL CAMP SCENE 003
+Location: Hollow Gate outer alcove
+Cast: Nadia, Sera
+
+Nadia wraps a tear in Sera's shoulder pauldron.
+
+Nadia: "The void does not attack first. It asks. It makes the surrender feel like relief."
+
+Sera: "And if you refuse?"
+
+Nadia: "It asks again. It has been asking since before the kingdom built its first wall."
+
+Nadia: "Your light-faith tradition. Does it hold where the light cannot follow?"
+
+Sera: "I have never been somewhere without some light."
+
+Nadia: "The Gate is the first."
+
+Sera is quiet. Then:
+
+Sera: "My faith was never in the light. The light is the symbol. The faith is in what chooses to walk despite the dark."
+
+Nadia: "I would like to stand near you when it gets worse."
+
+Sera: "Find me there. I will not be hard to locate."
+
+Nadia: "Why not?"
+
+Sera: "I will be the one shouting prayers."
+
+
+MISSION 017
+Mission: Void Whispers
+Location: Interior of the Hollow Gate, inner corridors
+
+Pre-Mission Cinematic
+The party finds evidence of a battle three days old. Scorch burns. Shattered drone fragments. A dozen warlock bodies in a defensive ring they clearly lost.
+
+At the center: a man the size of a structural wall, sitting on a piece of blasted stone with a greatsword across his knees.
+
+Rook: "You are late."
+
+Aric: "We did not know you were here."
+
+Rook: "No. But the mission needed doing."
+
+Kain: "You have been alone in here for three days."
+
+Rook: "Yes. They send more every eight hours. I have been counting."
+
+He stands in a single motion.
+
+Rook: "Three more formations between here and the Gate core. The medic drone feeds the last warlock tier. You have people who can kill it fast?"
+
+Kael raises a hand. Confirming availability, not volunteering.
+
+Rook nods once.
+
+Rook: "Then we should move before the next wave."
+
+Battle Start Lines
+Rook: "The drone first. Everything else follows from that."
+Kael: "I have the drone. Three steps."
+Aric: "Hold the corridor while he works."
+
+Post-Mission Outcome
+Draven finds Rook checking the party's wounded in the silence after.
+
+Draven: "You could have waited outside."
+
+Rook: "There were still people to protect inside."
+
+Draven: "How many?"
+
+Rook: "Seven. The last maintenance workers who had not reached the evacuation corridor. Nadia found them."
+
+Draven looks at Rook for a long moment.
+
+Draven: "What do you serve?"
+
+Rook: "Today: this corridor."
+
+Draven puts a hand briefly on Rook's shoulder.
+
+Draven: "That is a true thing to serve."
+
+
+OPTIONAL CAMP SCENE 004
+Location: Corridor shelter, inner Hollow Gate
+Cast: Draven, Rook
+
+Zephyr has conjured a ball of low heat in cupped hands. Draven and Rook sit on opposite sides of it.
+
+A long silence. Then Draven, without preamble:
+
+Draven: "Western siege of the pass road. Twelve years ago. I held the east door."
+
+Rook: "I held the west."
+
+Draven: "Not the same siege."
+
+Rook: "No. But the same kind of door."
+
+Draven: "Did yours hold?"
+
+Rook: "Long enough."
+
+Draven: "So did mine."
+
+
+OPTIONAL CAMP SCENE 005
+Location: Gate core antechamber
+Cast: Lyria, Mirel, Nadia, Sera
+
+While the party recovers, Mirel finds Lyria seated against the far wall, very still. Nadia is already with Mirel. Three people present with each other in the way that requires nothing accomplished.
+
+Sera comes looking for Mirel. Finds three. Stands at the edge for exactly one second. Sits.
+
+Lyria: "You stayed."
+
+Sera: "You looked like you needed numbers."
+
+Mirel: "She means you look like someone whose jokes have nowhere to land."
+
+Lyria, to Nadia: "Is she always this accurate?"
+
+Nadia: "About everything she has said to me tonight. I find it mildly alarming."
+
+Mirel, quietly: "The wisp showed you alone."
+
+Lyria: "I was still making jokes. No one was there to hear them. I did not realize how much I relied on the echo until the echo was gone."
+
+Sera: "I will hear them."
+
+Nadia: "As will I. Provided they are at least regionally amusing."
+
+Lyria laughs, small and real. Mirel puts her shoulder against Lyria's, deliberate.
+
+
+MISSION 018
+Mission: The Shattering
+Location: Hollow Gate core, threshold chamber
+
+Pre-Mission Cinematic
+The core chamber opens to the fractured sky above through a shaft of pure void. The Blood Moon Avatar has claimed the threshold: form-given-will, replicating aggression from memory.
+
+The void wisps move ahead of the Avatar. They do not attack. They surface.
+
+Selene: "The wisps will show you something. Do not stop fighting. Whatever you are shown is not a verdict."
+
+Battle Start Lines
+Aric: "Focus on the Avatar. Do not follow the wisps."
+Selene: "Move through it. Do not let them anchor you."
+Vex: "They will not touch me. I hold the forward position."
+
+Mid-Battle Flicker Cuts
+- Aric: the Lord Marshall's hand on his shoulder, warm first, the autumn-light version, teaching. Then pressing down with the certainty of someone who wrote the assignment before the boy could speak. He cannot rise.
+- Lyria: alone in a silent camp. Everyone gone. She is still making jokes with no one to hear them.
+- Kain: himself in fine clothes at a table set for other people's successes, being handed an assignment he cannot refuse.
+- Sera: a shrine she cannot find words for. Her sword useless. Faith gone silent as stone.
+- Vex: the wisps approach and retreat, repelled by curse-resonance. He fights the entire battle perfectly clear.
+
+Post-Mission Outcome
+The Avatar falls. A voice arrives not through the air but through the stone beneath all their feet.
+
+The Abyss Tyrant: "Knight-Without-Title."
+
+The party freezes.
+
+Aric: "What is Knight-Without-Title?"
+
+Selene: "A designation from the original Compact. The agent whose role in threshold closure was written at the opening compact ceremony."
+
+Mirel: "When was the original compact ceremony?"
+
+Selene: "Before the realm you were born into existed."
+
+
+REQUIRED SCENE: WHAT THE VOID SHOWED
+Cutscene ID: c2_void_interlude
+Location: Gate core antechamber
+Cast: Selene, full party
+
+Plays immediately after The Shattering. Not optional.
+
+Selene gathers the party. Not for strategy.
+
+Selene: "The void wisps showed you something. Each of you. None of what you were shown was a verdict."
+
+Lyria: "It showed me being alone. Everyone gone."
+
+Selene: "It showed you a living bridge with nothing to connect. That is not a fear of solitude. It is a fear of being unused, of the thing you are having no one to reach."
+
+Selene: "You are not alone."
+
+Lyria: "I know that now. I did not believe it until the wisp made me feel the opposite."
+
+Sera: "The shrine. I could not find prayer."
+
+Selene: "You do not need prayer in the Threshold. You need to keep walking. You know how to do that."
+
+Kain: "What about a man shown his own past in a room he was glad to leave?"
+
+Selene: "You already left. The leaving was real. The room was not."
+
+Selene: "The void showed you nothing you do not already know how to survive. That is why it uses those things."
+
+Mirel, quietly: "It did not touch Vex."
+
+Vex: "It could not enter. The curse is in the same register as the void. Like sound cancels sound."
+
+Selene: "Or like a key does not need to pick the lock it opens."
+
+End Beat
+Vex looks at Selene. Something in that exchange does not resolve cleanly. Hold on his face.
+
+
+PART III: VOID THRESHOLD
+
+
+MISSION 019
+Mission: Dark Horizon
+Location: Upper Void Threshold passages
+
+Pre-Mission Cinematic
+Below the Hollow Gate the geometry becomes a suggestion. Steps continue into something that resembles underground without being underground.
+
+At the Threshold entrance: a woman crouched over a surveying device that no longer functions correctly, writing down what it should read from memory.
+
+Iris: "You took longer than optimal through the Gate. The idol relay delay was correct. The corridor timing was not. Noted."
+
+Aric: "Who are you?"
+
+Iris: "Iris. Volt Arbalist. Embedded with Research Expedition Seven, which entered this Threshold eleven months ago."
+
+She pauses.
+
+Iris: "I am the only member who came back."
+
+Silence.
+
+Iris: "I have eleven months of behavioral data on the Tyrant, threshold architecture, and optimal tactical approaches. I also have a personal interest in this outcome because the six people I entered with deserve an ending."
+
+Aric: "You went back in to verify the data?"
+
+Iris: "The data has to be accurate."
+
+Battle Start Lines
+Iris: "The hex engineer's traps have been optimized for this corridor. I have the grid."
+Zephyr, aside to Lyria: "She made me feel improvised."
+Lyria: "You are improvised."
+Zephyr: "I know. I am in conflict about it."
+
+Post-Mission Outcome
+Iris sits with Aric while the party recovers.
+
+Iris: "The Tyrant called you Knight-Without-Title. The designation appears in Expedition Seven's deep archives. The original Compact identifies the role as someone who does not carry the counter-resonance. Someone who became it."
+
+Aric: "Became it."
+
+Iris: "The compact does not mean the person is the role. It means the role is the person. Whoever the Knight-Without-Title is, the resonance is not a thing they carry. It is something they are."
+
+Lyria, quietly, something shifting behind her eyes: "An oath-weave. Written into him before the word existed."
+
+Iris looks up. "That matches the compact's mechanism precisely. You read that from him?"
+
+Lyria: "From the beginning. I did not know what I was reading."
+
+Vex, from behind Aric's shoulder: "The blade reads that resonance in you. Not in the fracture. In you."
+
+Aric: "And no one told me."
+
+Iris: "The compact predates the kingdom that would have been responsible for informing you."
+
+Aric looks at the darkness below.
+
+Aric: "Of course it does."
+
+
+OPTIONAL CAMP SCENE 006
+Location: Deep threshold alcove
+Cast: Iris, Zephyr
+
+Zephyr finds Iris cataloguing air composition data. He sits with the confidence of someone who has never been unwelcome anywhere long enough to learn caution.
+
+Zephyr: "What do you serve?"
+
+Iris, not looking up: "The mission."
+
+Zephyr: "The whole time? Even before you knew about the Tyrant?"
+
+Iris: "I serve understanding. The mission is the current form of that. Before I had a mission I was studying storm energy dispersal in ridge country."
+
+She glances at him.
+
+Iris: "You produce an unusual signature. I would have studied you eventually."
+
+Zephyr takes this as a compliment.
+
+Iris: "Fast-cycle ambient charge conversion. High-yield single-pulse output. Low sustained efficiency. You are a weapon designed for opening moments."
+
+Zephyr: "That is the most accurate thing anyone has ever said about me that was also genuinely unkind."
+
+Iris: "I did not mean it unkindly."
+
+Zephyr: "I know. That was the unkind part."
+
+Iris: "The wind does not ask where it goes."
+
+Zephyr: "No."
+
+Iris: "I do."
+
+Zephyr: "That must be exhausting."
+
+Iris, returning to her data: "Relentlessly."
+
+
+MISSION 020
+Mission: The Abyss Stirring
+Location: Deep Threshold, the Tyrant's resonance layer
+
+Pre-Mission Cinematic
+The resonance layer presses back with every step like a door that has forgotten it was supposed to open. The Blood Moon Avatar has reconstituted in a deeper form: less solid, more idea.
+
+Selene: "The Tyrant learned from our last entry. The hex engineer's traps have been recalibrated to our exact signatures."
+
+Iris: "Every behavioral pattern it has observed about this party is now a weapon. We do not improvise here."
+
+Battle Start Lines
+Aric: "We push through. No hesitation."
+Sera: "Step into the pressure. Do not push against it."
+Lyria: "Wrong register. Do it on purpose."
+
+Mid-Battle Beats
+- Draven takes a trap-hit to one knee. Holds. Straightens. Without a word.
+- Sera stops trying to hold the Avatar's pressure back. She steps into it. The corridor clears.
+- Lyria laughs at the resonance press. The pressure hates laughter. She does it again. Starlight and void do not share register. She is her specific kind of weapon, and she knows it now.
+- Kael takes three steps he clearly plotted three moves earlier and drops the hex engineer without flourish.
+- Mirel works triage on Rook's shield-arm mid-engagement, doing both things at once, because the person in front of her deserves more than divided attention.
+
+Post-Mission Outcome
+In the silence after, Kael sits against the resonance-layer wall.
+
+Kael: "Seventeen different operations in four years. Every one had a logical case. None had a right one. This is the first time I have done a thing because I chose it."
+
+Zephyr: "How does it feel?"
+
+Kael: "Terrifying. Also the best I have felt in several years."
+
+Zephyr: "That checks out."
+
+
+OPTIONAL CAMP SCENE 007
+Location: Deep Threshold, approach to the Tyrant's domain
+Cast: Aric, Selene
+
+Aric stands where the resonance layer meets the Tyrant's domain. Selene finds him there.
+
+Aric: "You said you would show me my threads after."
+
+Selene: "I did."
+
+Aric: "We are almost after."
+
+Selene: "I saw you reaching through stone. Not for a weapon. For a document bearing your name that you did not write. When you touched it, you did not recognize the hand but you recognized the meaning."
+
+Aric: "Was I frightened?"
+
+Selene: "No. You were afraid. Those are different things. Frightened is what happens to the person you entered with. Afraid is what happens to the person standing at the door of something true."
+
+She pauses.
+
+Selene: "The version of you that was afraid was very much still standing."
+
+Aric: "Then I will take that."
+
+
+MISSION 021
+Mission: Tyrant's Domain
+Location: Deepest chamber of the Void Threshold
+
+Pre-Mission Cinematic
+The chamber is compressed void pressed into form. Everything is either shadow or outline. Even sound has outline. The Tyrant is already present when the party arrives. It does not introduce itself.
+
+It speaks to Vex first.
+
+The Abyss Tyrant: "Curse-Born. You carry my oldest mark."
+
+Vex: "I carry a blade that was bound in the void and survived it."
+
+The Abyss Tyrant: "The blade and the void share origin. You have been mine since the binding."
+
+Vex: "Then I have been very poorly managed."
+
+The Tyrant does not fight with violence first. It offers.
+
+To Aric: the return of purpose. A role written for him by something older than the kingdom that stripped it.
+To Lyria: the guarantee that none of them leave this room alone.
+To Kain: the assignment that is finally, perfectly correct.
+To Sera: the moment the shrine finds its answer.
+
+Battle Start Lines
+The refusals come in character, one by one.
+
+Lyria: "I do not want a guarantee. Guarantees require nothing of me. I want to earn it."
+
+Kain: "The correct assignment never comes from something that needs to give it to me."
+
+Sera: "No."
+
+Draven: "I have heard nobler speeches from worse men and buried all of them. Come and try."
+
+Then Vex steps forward.
+
+Vex: "Knight-Without-Title."
+
+The Tyrant: "That is not you."
+
+Vex: "No. He is behind me."
+
+Mid-Battle Beat
+Vex drives his blade into the threshold floor. The curse-resonance and compact-resonance meet in the same space for the first time. The mark on his forearm burns white, spiral-shaped, the inverse of the Tyrant's seal. The compact recognizes its key. The threshold begins to close from inside.
+
+Post-Mission Outcome
+The Tyrant diminishes. Gradually. Then completely.
+
+The fractured sky seals itself in a single clean line that contracts to nothing.
+
+Vex kneels beside the Tyrant's remaining trace in the stone and lifts something embedded there: a sealed compact bearing a name in script older than the kingdom.
+
+Aric's name.
+
+Vex holds it out without a word. The gesture is more articulate than anything he has said all chapter.
+
+Aric takes it. Reads it in silence. His hands do not shake.
+
+Aric: "It was always going to come to this."
+
+Lyria: "Did you know?"
+
+Aric: "No. But I am not surprised."
+
+Lyria, half to herself: "I felt something like that about you. From the beginning. I called it trust because I did not have a more accurate word."
+
+Lyria: "Does it change who you are?"
+
+Aric: "No. But it changes what I owe."
+
+
+FINALE CUTSCENE 001
+Cutscene ID: c2_fracture_sealed
+Location: Shattered Spire exterior
+Cast: Full party
+
+Visual Direction
+The sky above Shattered Spire is quiet. The crimson fracture is gone. The void-stone walls have gone inert. The stars are simply stars.
+
+Script
+Mirel kneels in the ash and sets both palms flat on the ground.
+
+Mirel: "For the ones who did not reach the evacuation corridor."
+
+Kael reviews the compact documentation with professional eyes.
+
+Kael: "The compact is not voided by closure. The Knight-Without-Title's obligations survive the sealing."
+
+Kain: "How long?"
+
+Kael: "Until the next time it is needed. The Tyrant's first suppression was Before Founding. The gap between first and second emergence was approximately one age."
+
+Kain: "This was the second."
+
+Kael: "Yes."
+
+They both look at Aric, who stands at the edge of the site reading his own name in the compact.
+
+Kain: "He already sees it."
+
+Kael: "He always saw more than was comfortable. He just had the wrong frame."
+
+Kain: "He has a new one now."
+
+
+FINALE CUTSCENE 002
+Cutscene ID: c2_elowen_arrives
+Location: Shattered Spire access road
+Cast: Full party, Captain Elowen, Loyalist soldiers
+
+Loyalist banners appear at the road's far end. Elowen rides at their front with twenty soldiers. Armor clean for a long trek. Expression prepared.
+
+Elowen: "I received the fracture-seal from the capital watch-point. I came as quickly as road allowed."
+
+Aric: "Why?"
+
+Elowen: "The mission that brought you here carried orders that were not what they were represented to be."
+
+Draven: "Choosing sides late."
+
+Elowen: "Yes."
+
+Elowen, directly to Aric: "The Lord Marshall is in custody. The capital's loyalist council has split. One faction wants you reassigned to command. One wants you tried for the destruction of Cinder Keep."
+
+Aric does not respond immediately. The party gives him three seconds.
+
+Lyria does not look away from him. Vex, at his right, shifts his weight forward slightly, the motion of someone ready to hold ground on a person's behalf.
+
+Aric: "What were the orders, exactly, that were not what they were represented to be?"
+
+The question is not tactical. The audience understands this.
+
+Elowen: "The second faction sent someone ahead of me. Three hours before I left."
+
+Aric looks at the compact in his hand. Then forward.
+
+Aric: "Then we have somewhere to go."
+
+
+FINALE CUTSCENE 003
+Cutscene ID: c2_kael_departs
+Location: Road junction outside Shattered Spire
+Cast: Kael, Kain, Aric
+
+Kael is at the junction with a traveling pack before the party has finalized route.
+
+Kael: "The compact's secondary documentation references a site in the northeast that predates the Gate. Someone with a six-hour lead and an unknown motive reached it ahead of us. I need to be in front of you."
+
+Aric: "We will follow."
+
+Kael: "Yes. I will be ahead."
+
+He glances at Kain. Then back.
+
+Aric: "Kael."
+
+Kael pauses.
+
+Aric: "Come back."
+
+Kael reaches into his vest and sets a folded note on the junction post. Then he is gone into the pre-dawn.
+
+Kain picks up the note. Reads it once. Folds it. Puts it in his vest.
+
+The note reads: Compact voided. Debt cleared. Don't look.
+
+End Beat
+Something about that is more than habit.
+
+
+FINALE CUTSCENE 004
+Cutscene ID: c2_selenes_warning
+Location: Road camp, one hour out
+Cast: Selene, Aric, Vex
+
+Selene pulls Aric aside before the hour is up. Vex follows, not asked but not unwelcome.
+
+Selene: "There is a third emergence."
+
+Quiet.
+
+Selene: "Not the Tyrant. Something the compact names in records I have only just translated since the threshold closed. The gap between second and third emergence is much shorter than first to second."
+
+Vex: "How short?"
+
+Selene: "Indeterminate. But the compact's counter-resonance designation applies to you specifically."
+
+She looks at Aric.
+
+Selene: "The Knight-Without-Title is not a one-time role."
+
+Aric looks at the compact. Then at his party moving through the pre-dawn, loud and battered and entirely real.
+
+Aric: "I would have made a different choice at the beginning if I could have."
+
+Selene: "Most people would."
+
+Aric: "But not now."
+
+He places the compact inside his vest, close to his chest.
+
+Aric: "Now I want to know what comes next."
+
+End Beat
+Vex says nothing. When Aric turns to walk, Vex walks beside him. Not behind. Not at the watching edge. Beside.
+
+
+FINALE CUTSCENE 005
+Cutscene ID: c2_cloaked_hand
+Location: Unknown interior
+
+Visual Direction
+No motion. No context. A single pale lantern. Two hands in lamplight. Steady. Practiced. Old. Cracking open a compact seal.
+
+The seal bears the same spiral mark that burned on Vex's forearm when the threshold closed.
+
+The hands set it down.
+
+Text Card
+TO BE CONTINUED IN CHAPTER 3 - THE COMPACT UNBOUND

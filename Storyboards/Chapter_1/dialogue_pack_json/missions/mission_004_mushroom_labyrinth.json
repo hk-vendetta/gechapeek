@@ -1,0 +1,23 @@
+{
+  "id": "mission_004",
+  "mission_name": "Mushroom Labyrinth",
+  "location": "Deeproot Hollow",
+  "dialogue": {
+    "pre_mission": [
+      { "speaker": "Sera", "line": "If you are here to prey on the helpless, line up and die in order." },
+      { "speaker": "Lyria", "line": "I like her immediately." },
+      { "speaker": "Aric", "line": "We are here to get them out." },
+      { "speaker": "Sera", "line": "Then stand and hold this line with me." }
+    ],
+    "battle_start": [
+      { "speaker": "Sera", "line": "Hold the corridor. No one passes us." },
+      { "speaker": "Aric", "line": "Move the wounded behind our line." }
+    ],
+    "post_mission": [
+      { "speaker": "Sera", "line": "You chose the trapped before the pursuit. That is not how most officers think." },
+      { "speaker": "Aric", "line": "Then most officers think wrongly." },
+      { "speaker": "Sera", "line": "I will accompany you. For now." },
+      { "speaker": "Lyria", "line": "For now is all we need." }
+    ]
+  }
+}

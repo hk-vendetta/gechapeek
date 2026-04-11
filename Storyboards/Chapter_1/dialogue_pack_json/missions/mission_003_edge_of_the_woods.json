@@ -1,0 +1,26 @@
+{
+  "id": "mission_003",
+  "mission_name": "Edge of the Woods",
+  "location": "Forest boundary",
+  "dialogue": {
+    "pre_mission": [
+      { "speaker": "Kain", "line": "If I meant to kill you, General, we would not be having this conversation." },
+      { "speaker": "Aric", "line": "Name yourself." },
+      { "speaker": "Kain", "line": "Kain. I track lies for a living. Yours have been expensive." },
+      { "speaker": "Lyria", "line": "I cannot decide if that was dramatic or rude." },
+      { "speaker": "Kain", "line": "It was efficient." },
+      { "speaker": "Kain", "line": "Someone is funding these raids. Not with gutter coin. With real backing." }
+    ],
+    "battle_start": [
+      { "speaker": "Kain", "line": "I will take the archers. Try not to die before I return." },
+      { "speaker": "Aric", "line": "Stay in formation or leave." },
+      { "speaker": "Lyria", "line": "Oh, this will be fun." }
+    ],
+    "post_mission": [
+      { "speaker": "Kain", "line": "Capital issue. Your enemy shops well." },
+      { "speaker": "Aric", "line": "Why bring this to me?" },
+      { "speaker": "Kain", "line": "Because if rot reaches the throne, the kingdom needs one honest man close enough to smell it." },
+      { "speaker": "Lyria", "line": "Welcome to the most uncomfortable alliance in the realm." }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "mission_005",
+  "mission_name": "Root Warrens",
+  "location": "Lower warrens and canopy break",
+  "dialogue": {
+    "pre_mission": [
+      { "speaker": "Zephyr", "line": "You all looked terribly outnumbered. It offended my sense of balance." },
+      { "speaker": "Kain", "line": "Who makes an entrance during an ambush?" },
+      { "speaker": "Zephyr", "line": "People with standards." },
+      { "speaker": "Lyria", "line": "I cannot believe this is happening, and yet it is helping." }
+    ],
+    "battle_start": [
+      { "speaker": "Zephyr", "line": "I will take the loud route." },
+      { "speaker": "Kain", "line": "That narrows nothing down." }
+    ],
+    "post_mission": [
+      { "speaker": "Zephyr", "line": "Zephyr. Storm caller. Occasional hero. Reliable threat to dull conversation." },
+      { "speaker": "Lyria", "line": "You will fit in terribly well." },
+      { "speaker": "Aric", "line": "If you stay, stay disciplined." },
+      { "speaker": "Zephyr", "line": "Disciplined chaos is still discipline." }
+    ]
+  }
+}

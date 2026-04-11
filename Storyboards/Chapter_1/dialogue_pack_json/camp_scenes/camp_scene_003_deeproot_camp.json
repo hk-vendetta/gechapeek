@@ -1,0 +1,12 @@
+{
+  "id": "camp_scene_003",
+  "type": "optional_camp_scene",
+  "location": "Deeproot camp",
+  "dialogue": {
+    "scene": [
+      { "speaker": "Sera", "line": "Rank is not honor. It is obligation." },
+      { "speaker": "Aric", "line": "I know." },
+      { "speaker": "Sera", "line": "Then remember it when the truth asks more of you than obedience does." }
+    ]
+  }
+}

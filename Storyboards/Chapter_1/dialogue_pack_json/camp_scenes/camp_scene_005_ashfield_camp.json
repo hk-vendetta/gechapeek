@@ -1,0 +1,15 @@
+{
+  "id": "camp_scene_005",
+  "type": "optional_camp_scene",
+  "location": "Ashfield camp",
+  "beats": [
+    "Aric does not answer."
+  ],
+  "dialogue": {
+    "scene": [
+      { "speaker": "Draven", "line": "We used to think loyalty solved everything." },
+      { "speaker": "Aric", "line": "Without loyalty, the realm falls apart." },
+      { "speaker": "Draven", "line": "And if loyalty is what they use to steer good men into evil?" }
+    ]
+  }
+}

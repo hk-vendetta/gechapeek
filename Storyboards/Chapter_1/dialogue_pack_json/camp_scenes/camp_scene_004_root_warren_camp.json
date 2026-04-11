@@ -1,0 +1,16 @@
+{
+  "id": "camp_scene_004",
+  "type": "optional_camp_scene",
+  "location": "Root Warren camp",
+  "beats": [
+    "Sera nearly smiles."
+  ],
+  "dialogue": {
+    "scene": [
+      { "speaker": "Kain", "line": "Stealth gets you through alive." },
+      { "speaker": "Zephyr", "line": "Style gets remembered." },
+      { "speaker": "Kain", "line": "By your enemies." },
+      { "speaker": "Zephyr", "line": "Exactly. Fear is branding." }
+    ]
+  }
+}

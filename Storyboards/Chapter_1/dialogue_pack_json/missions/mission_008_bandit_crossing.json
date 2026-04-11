@@ -1,0 +1,25 @@
+{
+  "id": "mission_008",
+  "mission_name": "Bandit Crossing",
+  "location": "Raider toll bridge",
+  "dialogue": {
+    "pre_mission": [
+      { "speaker": "Kain", "line": "Too obvious. They want us angry. Angry soldiers miss traps." },
+      { "speaker": "Draven", "line": "Cautious soldiers leave innocents to bleed at toll gates." },
+      { "speaker": "Sera", "line": "Argue after the living are safe." },
+      { "speaker": "Lyria", "line": "I know that look." },
+      { "speaker": "Aric", "line": "Which one?" },
+      { "speaker": "Lyria", "line": "The one where you think holding everyone together means breaking privately." },
+      { "speaker": "Aric", "line": "I am afraid, Lyria." },
+      { "speaker": "Lyria", "line": "Good. It means your heart still knows this matters." }
+    ],
+    "battle_start": [
+      { "speaker": "Aric", "line": "Take the bridge and keep the rear clear." },
+      { "speaker": "Zephyr", "line": "I can do dramatic and practical at the same time." }
+    ],
+    "post_mission": [
+      { "speaker": "Kain", "line": "We won. That is not the same thing as being safe." },
+      { "speaker": "Aric", "line": "Then we move before safety gets expensive again." }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "camp_scene_007",
+  "type": "optional_camp_scene",
+  "location": "Staging chamber before Furnace Hall",
+  "dialogue": {
+    "scene": [
+      { "speaker": "Aric", "line": "I believed service made the hand clean." },
+      { "speaker": "Lyria", "line": "Service does not decide that. Choice does." },
+      { "speaker": "Aric", "line": "I am afraid I have been a weapon for the wrong cause." },
+      { "speaker": "Lyria", "line": "A weapon would never ask. A good man does." }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c1_private_audience",
+  "type": "finale_cutscene",
+  "location": "Descent beneath Cinder Keep",
+  "dialogue": {
+    "scene": [
+      { "speaker": "The Lord Marshall", "line": "A final cleansing remains. A greater evil sleeps beneath the keep. Only your company has the strength to end it." },
+      { "speaker": "Sera", "line": "Then why send no priesthood, no wardens, no engineers?" },
+      { "speaker": "The Lord Marshall", "line": "Because I require certainty, not committee." },
+      { "speaker": "Kain", "line": "Certainty is what liars call control." },
+      { "speaker": "Aric", "line": "Enough. We hear him out, then we verify everything." }
+    ]
+  }
+}

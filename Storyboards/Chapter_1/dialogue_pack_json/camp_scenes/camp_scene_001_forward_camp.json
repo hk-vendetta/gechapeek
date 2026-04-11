@@ -1,0 +1,18 @@
+{
+  "id": "camp_scene_001",
+  "type": "optional_camp_scene",
+  "location": "Forward camp outside Verdant Clearing",
+  "beats": [
+    "Lyria hands Aric a cup of field tea.",
+    "Aric finally smiles."
+  ],
+  "dialogue": {
+    "scene": [
+      { "speaker": "Lyria", "line": "If you stare at that fire any harder, it will surrender." },
+      { "speaker": "Aric", "line": "I am thinking." },
+      { "speaker": "Lyria", "line": "No. You are brooding. Different posture." },
+      { "speaker": "Aric", "line": "Do you ever stop making light of things?" },
+      { "speaker": "Lyria", "line": "Only when the dark is winning." }
+    ]
+  }
+}

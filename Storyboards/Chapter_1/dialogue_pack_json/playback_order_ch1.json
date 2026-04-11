@@ -1,0 +1,189 @@
+{
+  "chapter_id": "chapter_1",
+  "title": "Ashes of Oath",
+  "description": "Canonical runtime sequence for chapter cutscenes, missions, optional camp scenes, and finale cutscenes.",
+  "segments": [
+    {
+      "order": 1,
+      "segment_type": "chapter_cutscene",
+      "id": "c1_opening_ceremony",
+      "file": "chapter_cutscenes/c1_opening_ceremony.json",
+      "optional": false
+    },
+    {
+      "order": 2,
+      "segment_type": "mission",
+      "id": "mission_001",
+      "file": "missions/mission_001_into_the_clearing.json",
+      "optional": false
+    },
+    {
+      "order": 3,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_001",
+      "file": "camp_scenes/camp_scene_001_forward_camp.json",
+      "optional": true
+    },
+    {
+      "order": 4,
+      "segment_type": "mission",
+      "id": "mission_002",
+      "file": "missions/mission_002_the_packs_cry.json",
+      "optional": false
+    },
+    {
+      "order": 5,
+      "segment_type": "mission",
+      "id": "mission_003",
+      "file": "missions/mission_003_edge_of_the_woods.json",
+      "optional": false
+    },
+    {
+      "order": 6,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_002",
+      "file": "camp_scenes/camp_scene_002_woodland_camp.json",
+      "optional": true
+    },
+    {
+      "order": 7,
+      "segment_type": "chapter_cutscene",
+      "id": "c1_elowen_authority",
+      "file": "chapter_cutscenes/c1_elowen_authority.json",
+      "optional": false
+    },
+    {
+      "order": 8,
+      "segment_type": "mission",
+      "id": "mission_004",
+      "file": "missions/mission_004_mushroom_labyrinth.json",
+      "optional": false
+    },
+    {
+      "order": 9,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_003",
+      "file": "camp_scenes/camp_scene_003_deeproot_camp.json",
+      "optional": true
+    },
+    {
+      "order": 10,
+      "segment_type": "mission",
+      "id": "mission_005",
+      "file": "missions/mission_005_root_warrens.json",
+      "optional": false
+    },
+    {
+      "order": 11,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_004",
+      "file": "camp_scenes/camp_scene_004_root_warren_camp.json",
+      "optional": true
+    },
+    {
+      "order": 12,
+      "segment_type": "mission",
+      "id": "mission_006",
+      "file": "missions/mission_006_hollows_heart.json",
+      "optional": false
+    },
+    {
+      "order": 13,
+      "segment_type": "mission",
+      "id": "mission_007",
+      "file": "missions/mission_007_smoldering_trail.json",
+      "optional": false
+    },
+    {
+      "order": 14,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_005",
+      "file": "camp_scenes/camp_scene_005_ashfield_camp.json",
+      "optional": true
+    },
+    {
+      "order": 15,
+      "segment_type": "mission",
+      "id": "mission_008",
+      "file": "missions/mission_008_bandit_crossing.json",
+      "optional": false
+    },
+    {
+      "order": 16,
+      "segment_type": "mission",
+      "id": "mission_009",
+      "file": "missions/mission_009_scorched_watchtower.json",
+      "optional": false
+    },
+    {
+      "order": 17,
+      "segment_type": "mission",
+      "id": "mission_010",
+      "file": "missions/mission_010_iron_gate.json",
+      "optional": false
+    },
+    {
+      "order": 18,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_006",
+      "file": "camp_scenes/camp_scene_006_shrine_ruin.json",
+      "optional": true
+    },
+    {
+      "order": 19,
+      "segment_type": "mission",
+      "id": "mission_011",
+      "file": "missions/mission_011_the_armory.json",
+      "optional": false
+    },
+    {
+      "order": 20,
+      "segment_type": "camp_scene",
+      "id": "camp_scene_007",
+      "file": "camp_scenes/camp_scene_007_staging_chamber.json",
+      "optional": true
+    },
+    {
+      "order": 21,
+      "segment_type": "mission",
+      "id": "mission_012",
+      "file": "missions/mission_012_furnace_hall.json",
+      "optional": false
+    },
+    {
+      "order": 22,
+      "segment_type": "finale_cutscene",
+      "id": "c1_return_and_honor",
+      "file": "finale/c1_return_and_honor.json",
+      "optional": false
+    },
+    {
+      "order": 23,
+      "segment_type": "finale_cutscene",
+      "id": "c1_private_audience",
+      "file": "finale/c1_private_audience.json",
+      "optional": false
+    },
+    {
+      "order": 24,
+      "segment_type": "finale_cutscene",
+      "id": "c1_deception",
+      "file": "finale/c1_deception.json",
+      "optional": false
+    },
+    {
+      "order": 25,
+      "segment_type": "finale_cutscene",
+      "id": "c1_escape_and_loss",
+      "file": "finale/c1_escape_and_loss.json",
+      "optional": false
+    },
+    {
+      "order": 26,
+      "segment_type": "finale_cutscene",
+      "id": "c1_second_march",
+      "file": "finale/c1_second_march.json",
+      "optional": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mission_007",
+  "mission_name": "Smoldering Trail",
+  "location": "Ashfield Pass",
+  "dialogue": {
+    "pre_mission": [
+      { "speaker": "Draven", "line": "About time. I was starting to think the capital had run out of competent help." },
+      { "speaker": "Aric", "line": "Draven." },
+      { "speaker": "Draven", "line": "Still impossible to bury, I see." },
+      { "speaker": "Lyria", "line": "Reunions should usually hurt less than this." }
+    ],
+    "battle_start": [
+      { "speaker": "Draven", "line": "Hit hard. Mourn later." },
+      { "speaker": "Aric", "line": "Protect the survivors." }
+    ],
+    "post_mission": [
+      { "speaker": "Aric", "line": "How many?" },
+      { "speaker": "Draven", "line": "Enough. We held for civilians. No order told us to. We did it because someone had to be better than the order." },
+      { "speaker": "Sera", "line": "Then your dead were not wasted." }
+    ]
+  }
+}

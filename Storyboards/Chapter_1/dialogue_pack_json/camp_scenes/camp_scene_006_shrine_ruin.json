@@ -1,0 +1,13 @@
+{
+  "id": "camp_scene_006",
+  "type": "optional_camp_scene",
+  "location": "Shrine ruin near Cinder Keep",
+  "dialogue": {
+    "scene": [
+      { "speaker": "Sera", "line": "I was taught faith would make the righteous path visible." },
+      { "speaker": "Mirel", "line": "And has it?" },
+      { "speaker": "Sera", "line": "No. But it has kept me walking when the path vanished." },
+      { "speaker": "Mirel", "line": "Then perhaps it has done enough for tonight." }
+    ]
+  }
+}

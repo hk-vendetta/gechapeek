@@ -1,0 +1,20 @@
+{
+  "id": "c1_opening_ceremony",
+  "type": "chapter_cutscene",
+  "location": "High Court of the capital",
+  "cast": ["Aric", "Lyria", "The Lord Marshall", "Captain Elowen", "court assembly"],
+  "dialogue": {
+    "scene": [
+      { "speaker": "The Lord Marshall", "line": "Aric, shield of the realm, you have carried this kingdom through fire and returned its people to peace time and again." },
+      { "speaker": "Aric", "line": "I have only done my duty, my lord." },
+      { "speaker": "Lyria", "line": "If they carve that on your grave, I am haunting the sculptor." },
+      { "speaker": "Aric", "line": "You assume I plan to die first." },
+      { "speaker": "Lyria", "line": "I assume if you do, it will be while frowning heroically." },
+      { "speaker": "Captain Elowen", "line": "Urgent reports from Whispering Woods. Raids at Verdant Clearing. Missing scouts. Survivors claim the attackers moved with military precision." },
+      { "speaker": "The Lord Marshall", "line": "Then we act before fear spreads faster than truth. Aric, go at once. Keep the force small. Quiet answers are often the cleanest." },
+      { "speaker": "The Lord Marshall", "line": "Bring them home. The realm still needs its shield." },
+      { "speaker": "Aric", "line": "By your command." }
+    ]
+  },
+  "end_beat": "Close on the Lord Marshall's hand on Aric's shoulder. Hold one beat too long. Music dips into unease."
+}

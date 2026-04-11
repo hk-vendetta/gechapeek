@@ -1,0 +1,14 @@
+{
+  "id": "c1_return_and_honor",
+  "type": "finale_cutscene",
+  "location": "Capital court",
+  "dialogue": {
+    "scene": [
+      { "speaker": "The Lord Marshall", "line": "Behold the heroes of Cinder Keep. Behold the shield of the realm." },
+      { "speaker": "Crowd", "line": "Long live the shield of the realm!" },
+      { "speaker": "The Lord Marshall", "line": "I knew you would endure." },
+      { "speaker": "Aric", "line": "We endured. Many did not." },
+      { "speaker": "Lyria", "line": "This celebration feels too clean for what we saw." }
+    ]
+  }
+}
