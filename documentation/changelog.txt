@@ -1,0 +1,590 @@
+Getcha Project Changelog
+========================
+
+Format
+------
+- Add newest entries at the top under a dated header.
+- Keep notes short and implementation-focused.
+- Template: YYYY-MM-DD - short change summary (files: ...)
+2026-04-08 (session 18)
+----------------------
+- Added foundational canon-lore draft bible:
+  - New `Assets/documentation/Lore.md` with compact law reconstruction, binding terms, Knight-Without-Title definition, original binding role structure, sigil and oath-weaving lore, prism/summoning canon, and explicit open decision prompts for narrative lock.
+- Added documentation landing page for easier navigation:
+  - `Assets/documentation/README.md` now links current v2 guides, setup guide, legacy snapshots, and supporting design docs.
+- Documentation refresh pass completed:
+  - Archived prior guides under `Assets/documentation/legacy/` as `*.legacy.md` snapshots.
+  - Replaced main guides with fresh v2 content:
+    - `Assets/documentation/gacha_system_player.md`
+    - `Assets/documentation/gacha_system_dev.md`
+    - `Assets/documentation/battle_system_player.md`
+    - `Assets/documentation/battle_system_dev.md`
+  - Added setup-focused runtime wiring guide:
+    - `Assets/documentation/setup_guide_v2.md`
+- Summon reveal flow finalized for attunement-first scene architecture:
+  - Added and wired `Assets/Scripts/AttunementFlowController.cs` to hide attunement on pull completion and restore after reveal close.
+  - Confirmed scene-layer pattern: AttunementCanvas (base) + RevealCanvas (overlay) with reveal sequencing on top.
+- Input System migration fix for reveal tap gating:
+  - `Assets/Scripts/SummonRevealSequencer.cs` now uses `UnityEngine.InputSystem` mouse/touch checks instead of legacy `UnityEngine.Input`.
+  - Prevents InvalidOperationException when project input handling is set to Input System package.
+- Prism reveal data-binding resilience pass:
+  - `Assets/Scripts/PrismWidget.cs` now adds display-name/rarity fallbacks and explicit warnings for missing reveal/text bindings.
+  - Helps diagnose prefab wiring issues (missing RevealRoot, UnitNameText, RarityText).
+- Attunement banner information expansion:
+  - `Assets/Scripts/GachaSystem.cs` added active banner presentation helpers:
+    - `GetActiveBannerName()`
+    - `GetActiveBannerFeaturedUnitNames()`
+    - `GetActiveBannerFeaturedUnitsSummary()`
+    - `GetActiveBannerRateSummary()`
+  - `Assets/Scripts/SummonInputHandler.cs` now supports optional UI fields:
+    - `bannerNameText`, `bannerDescriptionText`, `featuredUnitsText`, `bannerRateText`
+  - Enables full banner header + description + featured summary + rate summary on attunement screen.
+
+2026-04-07 (session 17)
+----------------------
+- Chapter 4 narrative pass completed with inlined draft scenes and hearing climax rewrite:
+  - Assets/Storyboards/Chapter_4/storyboard_ch_4.md now fully inlines C4-DS-01 through C4-DS-04 (no placeholder references remain).
+  - Scene 17 (The Hearing Under Fire) expanded: Kael resistance confrontation preserved and post-trial consequence changed to Draven's death via Prosecution Strike.
+  - Added Nadia + Mirel repeated failed healing attempts and Draven's final line continuity hook: "Don't forget to read mine."
+- Chapter 4 game-data integration completed:
+  - Assets/StreamingAssets/units_game.json: added unit_020 Nyra Halvek, unit_021 Caelia Vorn, and unit_022 Kain Vale (kept Kain + Kael as distinct existing units).
+  - Assets/StreamingAssets/enemy_units_game.json: added enemy_048 through enemy_062 for all Chapter 4 featured monsters and bosses (Varra, Mnemos Adjudicator IX, Oryx, Halis, Nhal, etc.).
+  - JSON validation confirmed both files parse after append.
+- First-run starter profile template implemented for new players:
+  - Assets/Scripts/SaveGameManager.cs now seeds starter profile on CreateProfile() when enabled.
+  - Starter state includes: Aric (3-star), Lyria (3-star), basic equipped weapon/chest armor, starter runes, consumables, summon tokens, gil, and Party 1 setup.
+  - Added configurable serialized starter template fields for balance tuning in Inspector.
+- Developer save-file utilities added:
+  - New context menu actions in Assets/Scripts/SaveGameManager.cs:
+    - Debug/Create Fresh Starter Profile
+    - Debug/Log Active Save Path
+    - Debug/Open Active Save Folder
+  - Added ActiveLocalSavePath and GetLocalSavePathForPlayer() helper for direct local JSON editing workflows.
+- Lore naming pass for summon currencies (player-facing labels only):
+  - New Assets/Scripts/SummonCurrencyNames.cs centralizes display labels.
+  - UI terminology updated:
+    - Summon currency now displays as **Compact Seals**.
+    - Premium/archive currency now displays as **High Compact Seals**.
+  - Updated scripts: TokenDisplayUI, RequiredTokenDisplayUI, SummonInputHandler, SummonResultUI, ArchiveTokenDisplay.
+  - Updated documentation: Assets/documentation/gacha_system_player.md and Assets/documentation/gacha_system_dev.md.
+- Gacha release schedule expanded for Chapter 4 roster growth:
+  - Assets/StreamingAssets/gacha_banners.json updated with three new featured banners:
+    - `chapter_4_crowns_of_the_deep` (Nyra + Caelia dual launch)
+    - `chapter_4_oath_black_verdict` (Nyra spotlight)
+    - `chapter_4_falling_lanterns_requiem` (Caelia spotlight)
+  - Broad pools (`standard`, `all_units`, `featured_lyria_dungeon_path`, `chapter_2_shattered_march`) now include newly summonable units unit_017 through unit_021.
+  - Intentionally excludes unit_022 (Kain Vale) because it is marked non-summonable in units data.
+
+2026-04-06 (session 16)
+----------------------
+- Rebranded player-facing project naming from placeholder to final title:
+  - Assets/documentation/summary.md updated to use **Oathsworn: Compact** throughout and expanded story/lore framing for Chapters 1-3.
+- Added marketing and pre-release positioning docs:
+  - New Assets/documentation/pitch.md with trailer script ("The Compact Remembers") and value-prop sales pitch versus competing titles.
+- Synced storyboard language + cutscene script pipeline:
+  - Assets/Storyboards/Chapter_1/storyboard_ch_1.md and Assets/Storyboards/Chapter_2/storyboard_ch_2.md normalized "Story Beat" section labels.
+  - Assets/Storyboards/Chapter_1/cutscene_scripts_ch_1 updated with Scene 1B flashback, Scene 6B lore interlude, and optional Lyria/Mirel/Sera bridge inserts.
+  - New Assets/Storyboards/Chapter_2/cutscene_scripts_ch_2 created from Chapter 2 storyboard with mission beats, interludes, finale cutscenes, and strategic transition callback.
+- Added full Sigil/Oath-Weaver gameplay foundation (first implementation slice):
+  - New Assets/Scripts/SigilType.cs (sigil enum), Assets/Scripts/SigilProfileResolver.cs (unit->sigil + Oath-Weaver/latent mapping), Assets/Scripts/SigilResonanceManager.cs (compatibility graph, mission weave budget, codex state, discovered weave tracking, passive flat bonuses).
+  - Assets/Scripts/BattleUnit.cs now supports mission-applied flat stat bonuses (ATK/DEF/MAG/SPR).
+  - Assets/Scripts/SaveGameManager.cs persists sigil progression fields (sigilCodexUnlocked, discoveredWeaves, extraWeavesPerMission), bootstraps SigilResonanceManager, and unlocks codex on mission_006 completion.
+  - Assets/Scripts/BattleSystem.cs now initializes mission resonance bonuses, exposes weave availability/definitions, and executes weave actions in combat.
+  - Assets/Scripts/BattleCardsUIController.cs supports queuing weave actions with optional single-target enemy index.
+  - Assets/Scripts/BattleUnitCardUI.cs now has dedicated Weave panel flow with previews (target/type/power/status), mission weave count display, and auto-close behavior on enemy target selection for single-target weaves.
+- Captured implementation plan and design decisions:
+  - New Assets/documentation/sigil_resonance_design.md authored with three-tier system, compatibility rules, progression/codex flow, onboarding, and Unity architecture notes.
+  - Implemented chosen decisions: mission-scoped weave charges, low flat passive bonuses, incompatible pairs no-op, codex unlock after Scene 6B timing (mission_006), and Aric as latent Oath-Weaver earlier.
+
+2026-04-05 (session 15)
+----------------------
+- Completed Milestone 1: mission result/reward loop (battle outcome → reward resolution → result UI).
+  - Assets/Scripts/BattleSystem.cs: added BattleEndEventData struct (victory, missionId, missionName, wave, returnSceneName, battleSceneName, defeatedEnemyIds), OnBattleEnded event, RaiseBattleEnded(), HandleSceneLoaded() for retry support, defeatedEnemyIds tracking in UpdateEnemyDownStates(), mission wave-based enemy spawning in SetupBattle().
+  - Assets/Scripts/MissionLaunchContext.cs: added ReturnSceneName and BattleSceneName fields; extended Set() signature.
+  - Assets/Scripts/UI/MissionSelectUI.cs: passes return/battle scene names to MissionLaunchContext.Set().
+  - New Assets/Scripts/BattleRewardSystem.cs: resolves post-battle rewards (gil, exp, first-clear bonuses, enemy drops, mission clear rewards); no rewards on defeat; grants items to ItemInventory, exp to all active party units, saves state.
+  - New Assets/Scripts/RewardDropDatabase.cs: loads enemy_drop_tables.json and mission_clear_rewards.json; exposes GetEnemyDropTable(), GetMissionReward(), StandardDropRate, RareDropRate.
+  - New Assets/Scripts/UI/BattleResultUI.cs: result screen (VICTORY/DEFEAT) with Continue and Retry buttons, renders gil/exp/first-clear tag/item list.
+  - New Assets/Scripts/UI/BattleRewardDebugOverlay.cs: QA logging overlay for reward resolution; subscribes to OnRewardsResolved; logs to console and optional TMP panel.
+  - Assets/Scripts/SaveGameManager.cs: bootstraps BattleRewardSystem and RewardDropDatabase in EnsureDependencies().
+- Added data-driven enemy drop system with standard/rare category schema:
+  - New Assets/StreamingAssets/enemy_drop_tables.json: global standard_drop_rate (0.28) and rare_drop_rate (0.06); per-enemy standard_items[] and rare_items[] arrays; covers enemy_001 through enemy_020; optional per-enemy rate override fields (standard_drop_rate_override, rare_drop_rate_override) with -1 sentinel to inherit global rate.
+  - New Assets/StreamingAssets/mission_clear_rewards.json: guaranteed_items and first_clear_items per mission; covers mission_001 through mission_021.
+- Added per-enemy drop rate overrides (this session):
+  - EnemyDropTable now has standard_drop_rate_override and rare_drop_rate_override fields (-1 = inherit global).
+  - BattleRewardSystem.RollEnemyDrops resolves effective rate per enemy before each roll.
+  - enemy_020 in enemy_drop_tables.json demonstrates override usage (0.60 standard / 0.20 rare as boss example).
+
+2026-04-05 (session 14)
+----------------------
+- Expanded playable/content roster and banner configuration for Chapter 2:
+  - Assets/StreamingAssets/units_game.json: added unit_011 through unit_016 with full rarity entries/stats/skills; renamed unit_009 to Rainier and unit_010 to Wassal.
+  - Assets/StreamingAssets/gacha_banners.json: added chapter_2_shattered_march featured banner and updated unit pools to include unit_014/unit_015/unit_016 across supported banners.
+- Added Chapter 2 narrative/game data package:
+  - New Assets/StreamingAssets/story_chapter_2.json with chapter structure (parts, mission_story, recruit unlocks, finale hooks, state flags).
+  - New Assets/StreamingAssets/unit_asset_manifest.json to track required sprite/icon/portrait/animation deliverables for unit_011-016.
+- Added large-scale storyboard and dialogue content pipeline assets:
+  - New Assets/Storyboards/Chapter_1/storyboard_ch_1.md and cutscene_scripts_ch_1 source script.
+  - New structured Chapter 1 dialogue pack JSON set under Assets/Storyboards/Chapter_1/dialogue_pack_json/:
+    - chapter cutscenes, all 12 mission dialogue files, 7 camp scenes, 5 finale scenes,
+    - plus dialogue_pack_manifest.json and playback_order_ch1.json for runtime sequencing.
+  - New Assets/Storyboards/Chapter_2/storyboard_ch_2.md (full Chapter 2 long-form storyboard).
+- Refined battle + item loadout UX integration and persistence wiring:
+  - New Assets/Scripts/BattleItemLoadoutManager.cs (10-slot pre-battle loadout manager, events, save-load integration).
+  - Assets/Scripts/BattleUnitCardUI.cs: swipe-down item panel, in-battle item selection flow, ally target picker for single-target/revive items.
+  - Assets/Scripts/ItemInventoryUI.cs: battle loadout toggle per combat-usable item and loadout capacity display.
+  - Assets/Scripts/SaveGameManager.cs: persisted battleItemLoadout and ensured manager bootstrapping.
+- Updated living documentation for current combat and product direction:
+  - Assets/documentation/battle_system_dev.md and battle_system_player.md rewritten to reflect 6-unit queue/execute flow, direct tap targeting, status/item systems, and modern chain behavior.
+  - Assets/documentation/gacha_system_player.md corrected pull-cost and F2P pull math presentation.
+  - New Assets/documentation/summary.md added as high-level game/product overview.
+
+2026-04-05 (session 13)
+----------------------
+- Added pre-battle item loadout system (max 10 items selected from full item inventory):
+  - New Assets/Scripts/BattleItemLoadoutManager.cs: singleton, AddToLoadout/RemoveFromLoadout/IsInLoadout/GetLoadout/Load API, OnLoadoutChanged event, DontDestroyOnLoad.
+  - Assets/Scripts/SaveGameManager.cs: added battleItemLoadout field to SaveGameData, persisted in BuildSaveData, restored in ApplySaveData, manager bootstrapped in EnsureDependencies.
+- Wired loadout into battle item UI flow:
+  - Assets/Scripts/BattleUnitCardUI.cs: swipe-down on card opens item panel showing loadout slots; quantity-0 items greyed out; all_allies items queue directly; single_ally/revive items open ally picker with alive/dead filtering.
+  - Items shortcut button added to bottom of skill menu (swipe-right path).
+  - New serialized fields: itemPanelRoot, itemButtonContainer, itemButtonPrefab, allyPickerPanelRoot, allyPickerContainer, allyPickerButtonPrefab.
+- Wired loadout configuration into item inventory UI:
+  - Assets/Scripts/ItemInventoryUI.cs: each usableInCombat item row gains a + Battle / ✓ Battle toggle button; greyed when loadout full; Battle Bag: X / 10 count label support via new loadoutCountText field; re-renders on both InventoryChanged and OnLoadoutChanged.
+- Fixed gacha player guide pull-cost inaccuracy:
+  - Standard banner: 100 crystals/pull, Featured banner: 200 crystals/pull (was incorrectly listed as 150 flat).
+  - F2P pull math updated: ~110-120 standard pulls or ~55-60 featured pulls per 4-week cycle.
+- Pushed branch feature/session-12-battle-targeting to remote and opened PR #2 to main.
+
+2026-04-05 (session 12)
+----------------------
+- Expanded party capacity from 5 to 6:
+  - Updated Assets/Scripts/PartySystem.cs (MaxUnitsPerParty = 6).
+  - Party UI that references PartySystem.MaxUnitsPerParty now reflects 6-unit parties.
+- Implemented battlefield slot mapping so selected party slot order aligns with battlefield sprite positions:
+  - Assets/Scripts/BattleSystem.cs now tracks playerPartySlotIndices during SetupBattle().
+  - New BattleSystem API: TryGetPlayerPartySlotIndex(playerIndex, out partySlotIndex).
+  - Assets/Scripts/BattlefieldSlotVisualController.cs now places player sprites using mapped party slot indices.
+- Added slot awareness to battle cards:
+  - Assets/Scripts/BattleCardsUIController.cs resolves each unit's mapped party slot.
+  - Assets/Scripts/BattleUnitCardUI.cs now supports party slot label text (S1..S6).
+- Implemented direct battlefield tap targeting (no separate target UI panel):
+  - New Assets/Scripts/BattlefieldTargetTapHandler.cs for tap forwarding.
+  - Assets/Scripts/BattlefieldSlotVisualController.cs now supports selection mode/state and selected ally/enemy indices.
+  - Queued skills/items in Assets/Scripts/BattleCardsUIController.cs now capture tapped target indices per unit action.
+  - Target selection is cleared per queued action to avoid selection clutter.
+- Added per-skill movement toggle for attack approach behavior:
+  - New field in runtime/DTOs: moveToTargetBeforeAttack / move_to_target_before_attack.
+  - Updated Assets/Scripts/UnitSkillData.cs, SkillDatabase.cs, MagicSkillDatabase.cs.
+  - Updated skill JSON samples in Assets/StreamingAssets/skills_ability_game.json and skills_magic_game.json.
+- Added battlefield attack visual event hooks:
+  - Assets/Scripts/BattleSystem.cs now emits OnPlayerAttackVisualRequested and OnEnemyAttackVisualRequested.
+  - Assets/Scripts/BattlefieldSlotVisualController.cs consumes these events for player move-lunge visuals.
+  - Enemy units are now intentionally stationary (no move-lunge to player side).
+- Replaced outline target marking with above-head indicator approach:
+  - Assets/Scripts/BattlefieldSlotVisualController.cs now supports a tiny targetIndicatorPrefab and ally/enemy indicator tinting.
+  - Selection markers now render above selected units for better readability on busy backgrounds.
+
+2026-04-05 (session 11)
+----------------------
+- Added full status-effect gameplay foundation (positive + negative effects):
+  - New Assets/Scripts/StatusEffectData.cs and Assets/Scripts/ActiveStatusEffect.cs.
+  - New Assets/Scripts/StatusEffectDatabase.cs loader and Assets/StreamingAssets/status_effects_game.json.
+  - BattleUnit status runtime expanded in Assets/Scripts/BattleUnit.cs:
+    - Inflict/remove/clear APIs, active status list, action-lock checks (sleep/paralyze/stone).
+    - Stat modifiers from statuses (ATK/DEF/SPR), end-of-round tick support (poison/regen), sleep wake-on-hit.
+- Added consumable battle effect metadata to item pipeline:
+  - Extended Assets/Scripts/ItemRecord.cs with combatEffect, combatEffectValue, combatTargetType, statusCures.
+  - Updated Assets/StreamingAssets/items_game.json combat-usable items with heal/revive/cure behavior.
+- Extended battle engine in Assets/Scripts/BattleSystem.cs:
+  - Item-use action execution during battle (turn-consuming), revive and cure integration.
+  - Status events added (applied/removed/ticked) for player/enemy units.
+  - Weapon status ailment procs now apply on landed physical hits via EquipmentInventory status_inflict data.
+  - Chaining refactor: chain progression now advances from landed hit timing (frame-gap based), not simple action timing.
+  - Skill attacks now resolve as frame-based hit sequences using skill attack_frames/attack_count/attack_damage.
+  - Manual execution flow: actions are queued first, then executed per deliberate card tap/click in player-chosen order.
+  - Enemy phase now starts only after all living player units have consumed turns.
+  - Action-blocked units (sleep/paralyze/stone) no longer auto-consume turn; if cleansed mid-phase they can still act.
+- Added status badges + tooltip readability in card UI:
+  - Assets/Scripts/BattleUnitCardUI.cs now renders status badge row from activeStatusIds.
+  - New Assets/Scripts/HoverTooltipTrigger.cs displays full status names on badge hover.
+- Added per-card turn-state visuals:
+  - Assets/Scripts/BattleUnitCardUI.cs supports queued border highlight plus ACTED/LOCKED dim states.
+  - Assets/Scripts/BattleCardsUIController.cs computes and enforces input lock for acted/currently blocked units.
+
+2026-04-05 (session 10)
+----------------------
+- Organized documentation: created Assets/documentation/ folder; moved changelog.txt there.
+- New Assets/documentation/gacha_system_player.md — player-facing gacha guide:
+  - Covers rarity rates, soft/hard pity, spark system, archive tokens, dupe shards, F2P income expectations, and FAQ.
+- New Assets/documentation/gacha_system_dev.md — developer architecture reference:
+  - File structure table, full JSON schema definitions, pull algorithm pseudocode, soft pity formula, spark data flow, persistence cycle, common tasks, testing checklist, and future extensions list.
+- Extended BannerRecord in Assets/Scripts/GachaSystem.cs:
+  - Added description (string) and weekly_dungeon_focus (BannerWeekDungeonFocusEntry[]) fields.
+  - New inner class BannerWeekDungeonFocusEntry: week_number, dungeon_id, theme_note.
+  - New API: GetActiveBannerDescription(), GetBannerDescription(bannerId), GetActiveBannerWeeklyDungeonFocus().
+- Updated Assets/Scripts/SummonInputHandler.cs: wired bannerDescriptionText to GetActiveBannerDescription().
+- Updated Assets/Scripts/BannerDropdownUI.cs: wired activeBannerDescriptionText to GetActiveBannerDescription().
+- Added description field to all 4 banners in Assets/StreamingAssets/gacha_banners.json.
+- New banner "featured_lyria_dungeon_path" added to gacha_banners.json:
+  - Features unit_002 (Lyria) at 1.5% rate; spark_threshold 160.
+  - 4-week dungeon focus mapped to dungeon_001 through dungeon_004.
+  - Banner id uses character name (featured_lyria_dungeon_path) for dev readability.
+- New Assets/documentation/chapter_1_story_draft.txt — Chapter 1 "Ashes of Oath" full story plan:
+  - 4-part structure across 12 missions tied to 4 dungeons.
+  - Cast plan for unit_001–unit_008; NPC roles (Lord Marshall, Captain Elowen, Brother Thane).
+  - Finale cutscene outline; chapter cliffhanger tease updated to unit_011 (Ember Warden) and unit_012 (Vale Seer).
+- New Assets/StreamingAssets/story_chapter_1.json — game-ready Chapter 1 story data:
+  - chapter metadata, cast_plan, unit_unlocks (6 events), mission_story for all 12 missions (pre_brief, story_goal, post_result, camp_optional).
+  - chapter_finale with cutscene sequence, final_shot_tease referencing unit_011 and unit_012.
+  - future_hooks (5 open threads for Chapter 2) and state_flags (sawRoyalCipherClue, trustLordMarshall, vexFateKnown).
+
+2026-04-04 (session 9)
+---------------------
+- Completed V1 summon progression system (pity, spark, archive tokens, dupe shards):
+  - Extended Assets/Scripts/GachaSystem.cs with full spark/archive implementation:
+    - ClaimFeaturedWithSpark() — direct guaranteed featured unit claim at spark threshold (160 by default).
+    - CanClaimFeaturedWithSpark() — validator for claim eligibility.
+    - ConvertBannerSparkToArchiveTokens(bannerId) — converts unspent spark to permanent currency on banner rotation.
+    - SpendArchiveTokens(amount), AddArchiveTokens(amount) — archive token economy.
+    - GetActiveBannerSparkPoints(), GetActiveSparkThreshold(), GetRemainingSparkToClaimFeatured() — accessors.
+    - GetFeaturedHardPityThreshold(), GetRemainingPullsToHardPity() — hard pity visibility.
+    - Featured rate-up bias logic on top-rarity pulls (1.5% featured vs 1.5% non-featured split).
+    - Soft pity bonus rate scaling (step-by-step increase per pull after pull 61, capping hard pity at 80).
+    - 10-pull minimum rarity guarantee (at least 1× Tier 4+ per 10 pulls on featured banners).
+    - Dupe shard payout system with featured unit bonus (Tier 5 featured dupes: 120 shards; standard: 80).
+    - Banner-aware spark tracking: spark persists per-banner; retiring banners auto-convert via ConvertSparkPointsFromMissingBannersToArchiveTokens().
+    - carry_pity_across_featured flag enforcement: resets featured pity meter when rotating to a new featured banner if flag is false.
+  - New Assets/Scripts/SparkProgressDisplay.cs — real-time spark progress UI widget:
+    - Shows spark counter (X/160) and visual progress bar with dynamic coloring (blue → gold).
+    - "Claim Featured" button wired to GachaSystem.ClaimFeaturedWithSpark(); registers claimed unit to inventory.
+    - Updates on every pull and in real-time via Update().
+  - New Assets/Scripts/BannerLifecycleManager.cs — banner rotation handler:
+    - EndBannerAndRotateTo(newBannerId) orchestrates banner swap + spark conversion + optional auto-save.
+    - Prevents spark point loss: unspent spark always converts to archive tokens on rotation.
+  - New Assets/Scripts/ArchiveTokenDisplay.cs — archive token balance tracker:
+    - Shows current archive token count.
+    - Placeholder for future archive shop UI integration.
+  - Updated Assets/StreamingAssets/gacha_banners.json with v1 tuning (all 3 banners):
+    - featured_knights now uses live featured rate-up (unit_009, unit_010 with 1.5% rate).
+    - All banners configured with soft_pity_start=61, hard_pity=80, spark_threshold=160 (featured only).
+    - Dupe shard rules configured per-tier with featured bonus on Tier 5.
+  - SaveGameManager extended to persist summon progression:
+    - SaveGameData v3 adds: featuredPityCounter, prismShards, archiveTokens, bannerSparkPoints.
+    - Auto-loads/saves spark state on profile load/save cycle.
+2026-04-03 (session 8)
+---------------------
+- Implemented sequential summoning reveal sequence (prism crack reveal):
+  - New Assets/Scripts/PrismWidget.cs — self-contained crystal prism UI widget:
+    - Three internal states: Prism (colored crystal + shimmer pulse), Crack animation, Revealed (unit portrait + name + rarity).
+    - SetData(GachaItem) colors the prism via UnitRarityTierCatalog.GetColor() per rarity tier.
+    - AnimateIn() — scale-from-zero with overshoot bounce (EaseOutQuad).
+    - Crack() — scale punch → white flash → simultaneous prism fade-out and portrait fade-in.
+    - SetAsRevealed() — instantly shows the portrait state; used to mark the already-seen featured unit in the Phase 2 grid.
+    - PlayRevealAnimation() — plays UnitAnimationSet Standby → Idle, or legacy summonAnimFrames → inventoryAnimFrames.
+    - Idle shimmer coroutine (sine-wave alpha on shimmerOverlay) while in prism state.
+    - ShowTapPrompt(bool) toggles a child tap-hint GameObject.
+  - New Assets/Scripts/SummonRevealSequencer.cs — full three-phase reveal state machine:
+    - Subscribes to GachaSystem.OnPullCompleted; sorts results rarest-first before display.
+    - Phase 0 (Intro): fades overlay to black; optional Animator trigger + configurable wait duration.
+    - Phase 1 (Featured prism): rarest unit shown as large prism center-screen; tap to crack open, tap again to continue.
+    - Phase 2 (Prism grid): all units including already-revealed featured unit appear simultaneously with stagger (gridAnimateInStagger); remaining prisms auto-crack one by one at configurable autoCrackInterval; Close button shown after all revealed.
+    - legacyResultUI field: hides SummonResultUI during sequence and restores it on close (backwards compatible).
+    - CloseSequence() public method — stops all coroutines, resets overlay, clears spawned widgets.
+
+2026-04-03 (session 7)
+---------------------
+- Implemented Phase 1.3 World Map + Quest Selection:
+  - Authored 4 new StreamingAssets data files (original names, not derived from JsonSamples IP):
+    - worlds_game.json — 2 worlds (Verdant Vale, Shattered Spire), 4 regions.
+    - dungeons_game.json — 7 dungeons spread across 4 regions; each references a mission list.
+    - missions_game.json — 21 missions; each carries cost_type, NRG cost, difficulty, recommended_level, gil reward, exp reward.
+    - mission_waves.json — 45 waves across all 21 missions; uses all 20 enemy IDs (enemy_001–enemy_020); supports count-per-enemy and level_override.
+  - New Assets/Scripts/WorldDatabase.cs — singleton loader for worlds, dungeons, and missions:
+    - Loads worlds_game.json, dungeons_game.json, missions_game.json from StreamingAssets.
+    - O(1) lookup: GetWorld(id), GetDungeon(id), GetMission(id).
+    - GetDungeonsInRegion(region), GetMissionsInDungeon(dungeon) convenience helpers.
+    - Worlds list sorted by sort_order field.
+    - Auto-created by SaveGameManager.EnsureDependencies().
+  - New Assets/Scripts/MissionWaveDatabase.cs — loads mission_waves.json:
+    - GetWavesForMission(missionId) returns ordered MissionWave list.
+    - BuildEnemyListForWave(missionId, waveNumber) returns List<GachaItem> via EnemyUnitDatabase.BuildRuntimeEnemy(); count > 1 spawns independent instances.
+    - Auto-created by SaveGameManager.EnsureDependencies().
+  - New Assets/Scripts/MissionLaunchContext.cs — static bridge between mission select and battle scene:
+    - Set(mission, currentWave) before SceneManager.LoadScene("BattleScene").
+    - Clear() after battle resolves (Phase 1.4 integration point).
+  - New Assets/Scripts/UI/WorldMapUI.cs — World › Region › Dungeon navigation panel:
+    - Populates world and dungeon scroll lists from WorldDatabase.
+    - Auto-selects first world on open; groups dungeons under region headers.
+    - Falls back to runtime-generated rows if no prefab assigned.
+    - Opens MissionSelectUI on dungeon selection.
+  - New Assets/Scripts/UI/MissionSelectUI.cs — mission list panel for a selected dungeon:
+    - Shows mission name, NRG cost, recommended level, and completion checkmark.
+    - Checks EnergyManager.CanAfford() before launch; shows noEnergyPopup if insufficient.
+    - Calls EnergyManager.Spend() then sets MissionLaunchContext and loads battle scene.
+    - Falls back to runtime-generated rows if no prefab assigned.
+  - SaveGameData extended with completedMissions (List<string>).
+  - SaveGameManager: CompletedMissions property, MarkMissionComplete(id) public API (auto-saves).
+  - SaveGameManager.EnsureDependencies() auto-creates WorldDatabase and MissionWaveDatabase.
+
+2026-04-03 (session 6)
+---------------------
+- Implemented Phase 1.2 Unit EXP / Level Progression:
+  - New Assets/Scripts/UnitLevelCapTable.cs — ScriptableObject mapping rarity tier → max level:
+    - Built-in rows: 3★→40, 4★→60, 5★→80, 6★→100, 7★→120.
+    - Per-rarity statGrowthMultiplierOverride field for fine-tuning.
+    - Extensible without code changes; add new rows for future rarities (6★, 7★, etc.).
+    - Create via right-click > Create > Getcha > Progression > Level Cap Table.
+  - New Assets/Scripts/UnitProgressionManager.cs — singleton progression system:
+    - Built-in rarity cap fallbacks active without any ScriptableObject.
+    - AddExp(unitInstanceId, amount) and AddExpToUnit(unit, amount) with level-up loop.
+    - EXP curve: configurable baseExpPerLevel (100) and expExponent (1.2) in Inspector.
+    - ApplyLevelToUnit(unit) — linear stat interpolation from base to defaultStatGrowthMultiplier (2.5×) at max level.
+    - GetExpProgress(unit) returns (currentExp, expNeeded, level, maxLevel) for HUD.
+    - OnLevelUp event: Action<GachaItem, int, int> (unit, oldLevel, newLevel).
+    - Auto-saves after any level gained.
+    - Auto-created by SaveGameManager.EnsureDependencies().
+  - New Assets/Scripts/UI/LevelUpPopupUI.cs — level-up overlay:
+    - Displays unit name, old → new level, scaled stats, and max level cap.
+    - Auto-hides after configurable delay (default 4s) or via close button.
+    - Subscribes to UnitProgressionManager.OnLevelUp automatically when autoSubscribe is true.
+  - GachaItem extended: level (default 1), currentExp (default 0).
+  - SavedUnitRecord extended: level, currentExp — round-tripped through save/load.
+  - SaveGameManager.ApplySaveData() calls ApplyLevelToUnit() on all restored units.
+  - SaveGameManager.EnsureDependencies() auto-creates UnitProgressionManager.
+
+2026-04-03 (session 5)
+---------------------
+- Implemented Phase 1.1 Energy/Stamina system:
+  - New Assets/Scripts/EnergyManager.cs — singleton NRG manager:
+    - Default cap: 60 NRG; recovery rate: +1 NRG per 5 minutes.
+    - CanAfford(cost), Spend(cost), Add(amount) public API.
+    - TimeUntilNextRecovery property for HUD countdown.
+    - ApplyOfflineRecovery() applies banked ticks accumulated while the game was closed.
+    - Auto-saves after each real-time recovery tick via SaveGameManager.SaveGame().
+    - Auto-created by SaveGameManager.EnsureDependencies(); no manual scene placement required.
+  - New Assets/Scripts/UI/EnergyDisplayUI.cs — HUD widget:
+    - energyLabel: displays "NRG: {current} / {max}".
+    - timerLabel: displays "Next: MM:SS" countdown or "FULL" when at cap.
+    - Subscribes to EnergyManager.EnergyChanged event; timer updates every frame.
+  - SaveGameData extended with currentNrg, maxNrg, lastNrgRecoveryUtc (long UTC ticks).
+  - SaveGameManager.BuildSaveData() writes energy state; ApplySaveData() calls EnergyManager.InitializeFromSave() to restore and apply offline recovery on load.
+  - missions.json cost / cost_type fields are ready to gate dungeon entry (Phase 1.3 integration point).
+
+2026-04-02 (session 4)
+---------------------
+- Added server-ready save transport wiring while keeping local saves as the default runtime behavior:
+  - SaveGameManager storage backend settings expanded:
+    - useServerStorage (default false)
+    - serverApiBaseUrl
+    - serverAuthToken
+    - serverWritePath, serverReadPath, serverListProfilesPath, serverDeletePath
+    - fallbackToLocalIfServerUnavailable
+  - SaveGameManager now constructs ServerSaveStorage with configurable endpoint paths and bearer token when server mode is enabled.
+  - New ServerSaveStorage HTTP transport implementation:
+    - Uses UnityWebRequest + coroutine runner for async Write/Read/ListProfiles/Delete calls.
+    - Supports Authorization: Bearer token header.
+    - Uses JSON request/response parsing via SaveApiContracts DTOs.
+    - Falls back to LocalFileSaveStorage on transport errors when fallback is enabled.
+  - SaveApiContracts expanded with SaveDeleteRequest and SaveDeleteResponse.
+  - No behavior change to live saves unless useServerStorage is enabled in inspector.
+
+2026-04-02 (session 3)
+---------------------
+- Implemented inventory slot numbering across all three inventory systems (Phase 1 prerequisite):
+  - Added inventorySlotIndex to GachaItem; added slotIndex to SavedUnitRecord, EquipmentInventoryEntry, MateriaInventoryEntry.
+  - NextFreeUnitSlot / NextFreeEquipmentSlot / NextFreeMateriaSlot helpers assign lowest available slot on acquisition.
+  - Slots assigned in RegisterPulledUnits, CreateAndRegisterUnitFromId, AddEquipmentById, AddAllEquipmentOnce, AddMateriaById, AddAllMateriaOnce.
+  - ReplaceInventory / ReplaceOwnedEntries auto-migrate old saves (all-zero slots → sequential assignment).
+  - SaveGameManager save/load wiring updated for all three inventory types.
+
+- Implemented 1.5 Gil Currency and Item Inventory (Phase 1):
+  - Added int gil and List<ItemInventoryEntry> ownedItems to SaveGameData.
+  - SaveGameManager: added Gil property, AddGil(amount), SpendGil(amount) API.
+  - New Assets/StreamingAssets/items_game.json — 21 items: HP restores (Potion/Hi-Potion/X-Potion/Full Cure), MP restores (Ether/Hi-Ether/Turbo Ether), revival (Phoenix Down/Mega Phoenix), full restores (Elixir/Megaelixir), status cures (Antidote/Gold Needle/Echo Herbs/Eye Drops/Remedy), craft materials (Iron Ore/Silver Ore/Shadow Crystal/Life Crystal/Burst Shard).
+  - New Assets/Scripts/ItemRecord.cs — runtime item data class.
+  - New Assets/Scripts/ItemDatabase.cs — singleton loader from items_game.json; GetItem, GetAllItems, GetByType APIs; mirrors EquipmentDatabase pattern.
+  - New Assets/Scripts/ItemInventory.cs — AddItem (carry-limit aware), RemoveItem, GetQuantity, HasItem, GetOwnedEntriesSnapshot, ReplaceOwnedEntries; auto-save hooked via InventoryChanged event.
+  - New Assets/Scripts/ItemInventoryUI.cs — scrollable list panel with optional prefab rows or runtime fallback; type filter support (Open("Consumable") / Open("Material")); detail pane on row click; auto-refreshes on InventoryChanged.
+  - SaveGameManager EnsureDependencies auto-creates ItemDatabase and ItemInventory; HookAutoSaveEvents wires InventoryChanged.
+
+2026-04-02 (session 2)
+---------------------
+- Fixed deprecation warnings in RequiredTokenDisplayUI.cs:
+  - Replaced FindObjectOfType<T>() and FindFirstObjectByType<T>() with FindAnyObjectByType<T>().
+
+- Added battle unit animation system:
+  - New UnitAnimState enum: Idle, Standby, Attack, MagicAttack, Dying, Dead.
+  - New UnitAnimationSet ScriptableObject (Assets/Scripts/UnitAnimationSet.cs) — holds one UnitAnimClip per state; create via right-click > Create > Getcha > Units > Animation Set.
+  - New UnitSpriteAnimator MonoBehaviour (Assets/Scripts/UnitSpriteAnimator.cs) — coroutine-based frame animator for UI Images; methods: Play, PlayStatic, Stop, PlayState.
+  - GachaItem updated: added animationSet reference, legacy summonAnimFrames/summonAnimFps, inventoryAnimFrames/inventoryAnimFps fields.
+  - SummonResultEntry updated: PlayUnitIcon() prefers UnitAnimationSet (Standby→Idle), falls back to legacy frame arrays.
+  - UnitInventoryCard updated: plays Idle state from animationSet or falls back to legacy inventory frames.
+  - BattleUnitCardUI updated: BindUnitData(GachaItem, isAlive) sets sprite and starts Idle/Dead; PlayUnitAnimation(UnitAnimState) chains Attack/MagicAttack/Standby→Idle and Dying→Dead.
+  - BattleCardsUIController updated: subscribes to OnPlayerAnimationRequested, routes state to correct card.
+  - BattleSystem updated: emits OnPlayerAnimationRequested (Attack/MagicAttack/Standby/Dying/Dead), OnEnemyActionStarted, OnEnemyDefeated; exposes TryGetPlayerUnitData/TryGetEnemyUnitData; RestorePlayerIdleAfterDelay coroutine; HashSet guards prevent duplicate death triggers.
+
+- Added enemy battle visual effects:
+  - New EnemyBattleVisualController MonoBehaviour (Assets/Scripts/EnemyBattleVisualController.cs).
+  - Alpha pulse + scale punch on enemy action (pulseDuration, pulseMinAlpha, pulseScaleMultiplier).
+  - Smooth fade-out on enemy defeat (defeatFadeDuration).
+  - Index-aligned enemyImages list; subscribes to BattleSystem.OnEnemyActionStarted / OnEnemyDefeated.
+
+- Added unit inventory detail panel:
+  - New UnitDetailPanel singleton (Assets/Scripts/UnitDetailPanel.cs).
+  - Open(GachaItem) populates identity, 8 core stats, resistances, equipment slots (via EquipmentInventory + EquipmentDatabase), materia slots (via MateriaInventory + MateriaDatabase).
+  - UnitInventoryCard updated: added viewDetailsButton and OnViewDetailsPressed().
+
+- Added per-player save profile system:
+  - SaveGameData extended with playerId, playerName, gachaTokens, lastSavedUtc.
+  - Save files now named savegame_{playerId}.json.
+  - New ISaveStorage interface (Assets/Scripts/ISaveStorage.cs): Write, Read, ListProfiles, Delete.
+  - New LocalFileSaveStorage (Assets/Scripts/LocalFileSaveStorage.cs): persistent-data-path file I/O with try/catch.
+  - SaveGameManager refactored: Storage property (swappable at runtime), CreateProfile, LoadProfile, LoadMostRecentProfile, ListProfileHeaders, DeleteProfile.
+  - On startup: loads most recent profile by lastSavedUtc; creates default profile if none found.
+
+- Fixed grant-all overwriting loaded saves:
+  - EquipmentInventory and MateriaInventory: added loadedFromSave bool flag.
+  - ReplaceOwnedEntries() sets loadedFromSave = true; grantAllOnStart skips if flag is set.
+
+- Fixed summon results layout issues:
+  - SummonResultUI.EnsureContainerLayout() auto-adds correct LayoutGroup + ContentSizeFitter at runtime.
+  - Changed Destroy to DestroyImmediate to prevent null-ref when swapping layout groups mid-coroutine.
+
+- Fixed rarity border serialization loss in SummonResultEntry:
+  - Promoted RarityBorderVisual and BorderAnimationType from nested to top-level classes.
+
+- Added 100-pull hard cap in SummonInputHandler:
+  - const MaxSummonPullsPerRequest = 100 applied in PerformAllInSummon() and ExecutePull().
+
+- Fixed CS0106 compiler error in SummonResultEntry:
+  - PlayUnitIcon() was accidentally nested inside ApplyRarityBorderVisual; class structure rebuilt.
+
+2026-04-02
+----------
+- Updated unit JSON content quality and equip compatibility:
+  - Added missing `description` fields directly under `title` for units that did not have one in `Assets/StreamingAssets/units_game.json`.
+  - Added `"Accessory"` to `equip_types` for all units so each unit can equip accessory-category items.
+
+- Increased player unit materia capacity to 4 slots:
+  - Updated `GachaItem` default `materiaSlotCount` from 2 to 4.
+  - Updated `GameUnitDatabase` runtime unit build path to initialize summoned units with 4 materia slots.
+  - Updated `UnitInventory` metadata normalization to enforce a minimum of 4 materia slots on owned units.
+  - Updated `SaveGameManager` defaults/load behavior so restored units are clamped to at least 4 materia slots.
+
+- Fixed summon rate and rarity selection behavior:
+  - `GachaSystem` now filters rarity rolls to tiers that actually have eligible units in the active pool.
+  - Corrected filtered rarity weight selection so candidate rates are re-scaled before the final random roll.
+  - Editor-time `OnValidate()` checks now skip runtime pool-availability warnings to avoid false rarity spam in the inspector.
+
+- Fixed unit rarity normalization and debug summon tier issues:
+  - `UnitInventory` now clamps saved and upgraded unit rarity tiers to each unit's declared JSON max.
+  - Prevented debug summon flows from displaying invalid tiers such as `unit_001` at tier 6.
+
+- Expanded summonable unit data and banner pools:
+  - Added three new units with full rarity ladders in `Assets/StreamingAssets/units_game.json`: `unit_011`, `unit_012`, `unit_013`.
+  - Each new unit includes unlockable `rarity_entries` for tiers 1 through 5.
+  - Updated `Assets/StreamingAssets/gacha_banners.json` so the new units are available from the `standard` and `all_units` banners.
+
+- Added inspector-controlled summon rarity ranges for unit templates:
+  - Added `summonRarityMin` and `summonRarityMax` to `GachaItem`.
+  - `GachaSystem` now treats a unit as eligible for any rarity tier inside that range.
+  - Pull resolution now materializes the selected unit at the rolled rarity tier.
+
+- Added JSON-driven banner pools:
+  - `GachaSystem` now supports loading banner definitions from `Assets/StreamingAssets/gacha_banners.json`.
+  - Added active banner APIs: `GetBannerIds()`, `SetActiveBanner(bannerId)`, `ReloadBanners()`, and `ActiveBannerId`.
+  - Active banner rebuilds the runtime gacha pool from configured `unit_ids` and each unit's summonable rarity range.
+
+- Added UI helper for banner switching:
+  - New `Assets/Scripts/BannerDropdownUI.cs` auto-populates a `Dropdown` from `GetBannerIds()`.
+  - Displays current active banner in a `Text` label.
+  - Supports runtime banner switching through dropdown selection and refresh.
+
+2026-04-01
+----------
+- Newest summary:
+  - Stabilized rarity behavior for debug summons and owned units:
+    - sourceRarityTier no longer gets unintentionally overwritten when explicitly set.
+    - Existing owned units refresh source tier from JSON when fetched by internal ID.
+    - Added startup/load normalization with upgrade-safe override support.
+  - Added rarity progression support:
+    - Introduced upgradedRarityTier on GachaItem.
+    - Persisted upgraded rarity through save/load.
+    - Added UnitInventory.ApplyRarityUpgrade(unitInstanceId, newTier) API.
+  - Added enemy data/runtime support:
+    - Generated a clean 20-entry enemy_units_game.json dataset.
+    - Implemented EnemyUnitDatabase with GetEnemyById, GetAllEnemyIds, and BuildRuntimeEnemy(enemyId).
+
+- Added EnemyUnitDatabase loader at Assets/Scripts/EnemyUnitDatabase.cs:
+  - Reads Assets/StreamingAssets/enemy_units_game.json.
+  - Exposes GetEnemyById and GetAllEnemyIds APIs.
+  - Mirrors GameUnitDatabase singleton/load/reload behavior for enemy records.
+  - Added BuildRuntimeEnemy(enemyId) for battle-ready runtime GachaItem enemy spawns.
+
+- Added enemy skill dataset at Assets/StreamingAssets/skills_enemy_game.json:
+  - Analyzed JsonSamples/monster_skills.json and mapped to the unit skill JSON schema.
+  - Uses same SkillDto fields as skills_ability_game.json for loader compatibility.
+  - Includes 20 enemy skill entries (offense, heal, cleanse, dispel, revive, summon support).
+
+- Added EnemySkillDatabase loader at Assets/Scripts/EnemySkillDatabase.cs:
+  - Mirrors SkillDatabase behavior with independent singleton and skill dictionary.
+  - Loads Assets/StreamingAssets/skills_enemy_game.json on demand or at Awake.
+  - Exposes GetEnemySkill(skillId) and GetSkill(skillId) for enemy AI resolution.
+  - Maps JSON into UnitSkillData runtime objects with target parsing and safe defaults.
+
+- Added enemy unit dataset at Assets/StreamingAssets/enemy_units_game.json:
+  - Created 20 example enemies using units_game-compatible schema.
+  - Omitted rarity, sex, roles, and categories fields as requested.
+  - Set is_summonable to false for all enemy entries.
+  - Included ai_profile_id links based on monster_ai profile patterns.
+
+- Added JSON-driven unit runtime pipeline via GameUnitDatabase.
+- Added unit stat expansion support (HP/MP/ATK/DEF/MAG/SPR/SPD/CRIT).
+- Added multi-hit attack profile support (count, damage splits, frames).
+- Added chain/combat UI integration updates and damage popup support.
+- Added start scene flow and battle scene entry helpers.
+- Added battle debug controls for fast testing.
+- Added direct summon-by-id debug flow for internal unit IDs.
+- Added safer database bootstrap logic for create-by-id unit paths.
+
+- Added equipment system integration:
+  - EquipmentItem, EquipmentDatabase, EquipmentInventory.
+  - Equip ownership snapshots and slot validation support.
+
+- Added materia and magic system integration:
+  - MagicSkillDatabase, MateriaDatabase, MateriaInventory.
+  - Materia-granted skill resolution for units.
+
+- Added save/load persistence:
+  - SaveGameManager and savegame serialization.
+  - Restores owned units, equipment, materia, and selected party.
+
+- Added OpenAPI contract files:
+  - openapi/inventory-v1.openapi.yaml
+  - openapi/inventory-admin-v1.openapi.yaml
+
+- Added summon result icon robustness:
+  - Improved sprite lookup fallbacks in GameUnitDatabase.
+  - Improved SummonResultEntry image auto-binding behavior.
+
+- Replaced deprecated Unity API usages in summon input/debug paths:
+  - FindObjectOfType<T>() -> FindFirstObjectByType<T>()
+
+- Added numeric rarity tier catalog and UI mapping:
+  - 1 Common, 2 Uncommon, 3 Rare, 4 Epic, 5 Legendary.
+  - Summon results now label/color by numeric tier mapping.
+
+- Added upgrade-safe rarity model:
+  - GachaItem.upgradedRarityTier override.
+  - Save/load persistence for upgraded rarity tier.
+  - Startup/load normalization refreshes source tiers from JSON,
+    but does not overwrite upgraded rarity tiers.
+
+- Added UnitInventory rarity upgrade API:
+  - ApplyRarityUpgrade(unitInstanceId, newTier)
+  - Rejects downgrades and synchronizes runtime rarity object.
+
+Notes for future updates
+------------------------
+- Append each new change under a new dated header.
+- Include files touched when useful.

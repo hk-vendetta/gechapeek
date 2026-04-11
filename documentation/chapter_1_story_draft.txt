@@ -1,0 +1,201 @@
+GETCHA - CHAPTER 1 STORY DRAFT
+Working title: Ashes of Oath
+
+Purpose
+- Establish Aric the Bold as the central protagonist.
+- Build trust in The Lord Marshall as a wise ruler and father figure.
+- Form a lovable core party through shared hardship, humor, and sacrifice.
+- End Chapter 1 with a major betrayal and cliffhanger that points into Chapter 2.
+
+Story Pillars (Chapter 1)
+- Emotion: brotherhood, found family, grief, and hope after loss.
+- Deceit: The Lord Marshall appears noble while manipulating events in secret.
+- Unity: unlikely allies from different paths choose to stand together.
+- Cost of duty: loyalty to crown versus loyalty to truth.
+
+Main Chapter 1 Cast (Playable)
+- Aric the Bold (unit_001): decorated general, disciplined, honorable.
+- Lyria (unit_002): starlight mage, warm humor, emotional heart of the team.
+- Kain (unit_003): shadow assassin, sarcastic, distrustful, learns to trust.
+- Sera (unit_004): holy sentinel, moral compass, protective and principled.
+- Zephyr (unit_005): storm caller, comic relief, surprising depth.
+- Draven (unit_006): iron warlord, blunt veteran, loyalty tested.
+- Mirel (unit_007): tide priestess, empathetic healer, voice of grief and healing.
+- Vex (unit_008): cursed blade, feared outsider, key to late Chapter 1 turn.
+
+Reserved Primarily for Chapter 2 (Playable)
+- Codename Ember Warden (unit_011)
+- Codename Vale Seer (unit_012)
+Notes:
+- They can be teased in Chapter 1 via rumors, letters, or silhouette cameos, but not fully recruited yet.
+
+Key Non-Playable Characters (Chapter 1)
+- The Lord Marshall: ruler of the kingdom, Aric's mentor, public hero, hidden architect of chaos.
+- Captain Elowen (new NPC): command staff liaison, practical and loyal to Aric.
+- Brother Thane (new NPC): archivist-priest who discovers forbidden records.
+- Twinfang Chief (existing enemy title): used as visible local antagonist before the true villain reveal.
+
+Playable Availability Plan
+- Start Available: Aric, Lyria.
+- Unlocks through Chapter 1 progression:
+  - Kain at Dungeon 1 finale.
+  - Sera at Dungeon 2 midpoint.
+  - Zephyr at Dungeon 2 finale.
+  - Draven at Dungeon 3 midpoint.
+  - Mirel at Dungeon 4 midpoint.
+  - Vex at Chapter 1 final act (late, high-impact reveal ally).
+
+CHAPTER 1 STRUCTURE
+- Part I: The Green Oath (Dungeons 1-2)
+- Part II: Embers of Command (Dungeons 3-4)
+- Chapter Finale: The Furnace of Truth (Mission 012 and ending cutscene)
+
+PART I - THE GREEN OATH
+Dungeons covered:
+- Dungeon 001: Verdant Clearing (Missions 001-003)
+- Dungeon 002: Deeproot Hollow (Missions 004-006)
+
+Opening Cinematic
+- Ceremonial scene in the capital.
+- The Lord Marshall publicly praises Aric as "the shield of the realm."
+- Lyria jokes that Aric only smiles during battles and funerals; Aric cracks a rare smile.
+- Disturbance report arrives: attacks near Whispering Woods.
+- The Lord Marshall calmly orders Aric to resolve it quickly and quietly.
+
+Mission Beat Mapping
+- Mission 001 - Into the Clearing:
+  - Tone: introduction and chemistry.
+  - Party banter: Lyria teases Aric's seriousness; Aric counters with dry humor.
+- Mission 002 - The Pack's Cry:
+  - First emotional warning: villagers mention missing scouts and strange symbols.
+- Mission 003 - Edge of the Woods:
+  - Reveal Kain as a masked observer tracking the same threat.
+  - Kain reluctantly aids the fight, then challenges Aric's trust in the crown.
+  - Mild part cliffhanger setup: "Someone is funding these raids."
+
+Transition to Deeproot Hollow
+- Captain Elowen reports multiple coordinated attacks, too disciplined for random bandits.
+- The Lord Marshall sends praise and a private seal granting Aric expanded authority.
+- Lyria is impressed; Kain is suspicious.
+
+- Mission 004 - Mushroom Labyrinth:
+  - Introduce Sera, tending wounded civilians and refusing to abandon them.
+  - Sera joins temporarily for escort.
+- Mission 005 - Root Warrens:
+  - Zephyr enters in a chaotic rescue with storm magic and jokes to break tension.
+  - Comedic beat: Zephyr and Kain argue over "stealth" versus "style."
+- Mission 006 - Hollow's Heart:
+  - Swamp shaman defeated; clues indicate orders signed with a royal cipher.
+  - Brother Thane secretly confirms the cipher should be impossible to forge.
+
+Part I Mild Cliffhanger
+- Back at camp, Aric receives a personal letter from The Lord Marshall: "Trust no one beyond your command."
+- Kain notices the wax seal is fresh, but the parchment smells of volcanic ash, not the capital.
+- Tease for Part II: all roads point toward Ashfield Pass.
+
+PART II - EMBERS OF COMMAND
+Dungeons covered:
+- Dungeon 003: Ashfield Pass (Missions 007-009)
+- Dungeon 004: Cinder Keep (Missions 010-012)
+
+Part II Opening
+- The team crosses into Ember Foothills.
+- Tone shifts from woodland mystery to military escalation.
+- Aric struggles between duty to The Lord Marshall and loyalty to his growing team.
+
+Mission Beat Mapping
+- Mission 007 - Smoldering Trail:
+  - Draven appears leading a battered holdout unit.
+  - Draven and Aric share history from prior campaigns.
+  - Emotional beat: Draven lost most of his squad protecting civilians.
+- Mission 008 - Bandit Crossing:
+  - Team conflict: Kain accuses command of setting a trap.
+  - Lyria diffuses tension with humor, then privately admits fear to Aric.
+- Mission 009 - Scorched Watchtower:
+  - Twinfang Chief vanguard defeated.
+  - Discovery: supply crates stamped with a secret armory mark tied to royal command.
+
+Approach to Cinder Keep
+- Mirel joins after saving survivors from volcanic collapse.
+- She brings testimony: "soldiers" burned villages to create panic corridors.
+- Sera and Mirel scene on grief and faith: one prays, one listens; both choose action.
+
+- Mission 010 - Iron Gate:
+  - Golems and rune sentries suggest old defense systems were reactivated intentionally.
+- Mission 011 - The Armory:
+  - Team learns the keep is a staging ground, not a rebel fortress.
+  - Vex appears as a hostile "cursed enforcer," then spares civilians and vanishes.
+- Mission 012 - Furnace Hall:
+  - Epic battle sequence against Twinfang Chief and Rage Cyclops.
+  - Team victory is costly; Draven critically wounded protecting Aric.
+
+PART II Mild Cliffhanger
+- In the quiet after battle, the party finds sealed orders naming Aric's unit as expendable.
+- Signature appears to be The Lord Marshall's hand.
+- Aric refuses to believe it and insists on returning to the capital for answers.
+
+CHAPTER 1 MAJOR FINALE - THE BETRAYAL OF CINDERS
+Final Cutscene Sequence (post Mission 012)
+1) Return and Honor
+- The Lord Marshall welcomes Aric publicly as a hero.
+- He embraces Aric like a son and awards him before the court.
+- Player is encouraged to trust him again.
+
+2) The Private Audience
+- The Lord Marshall asks Aric to attend a final "cleansing operation" at a hidden chamber below Cinder Keep.
+- He claims a greater demon is awakening and only Aric's team can stop it.
+
+3) The Deception
+- In the hidden chamber, runes activate and bind the party.
+- The Lord Marshall reveals his true goal: he engineered the regional chaos to harvest battle-born aether and open the way to a higher power.
+- He praises Aric's loyalty as the final key.
+
+4) Emotional Collapse
+- Aric realizes every victory fed the ritual.
+- Lyria confronts The Lord Marshall in fury and heartbreak.
+- Sera declares him fallen from grace.
+- Kain: "I told you kings lie. I just hoped this one didn't."
+
+5) Epic Escape / Loss
+- Vex returns and breaks the rune lock at personal cost, enabling the party to flee.
+- Chamber collapses; unclear if Vex survives.
+- The Lord Marshall remains inside the firelight, calm, and smiling.
+
+6) Chapter 1 Final Cliffhanger (To Be Continued)
+- Sky tears with a crimson fracture above the keep.
+- The Lord Marshall's voice echoes: "Let the second march begin."
+- Final shot: two silhouettes (Codename Ember Warden and Codename Vale Seer tease) watch the fracture from afar.
+- Text card: TO BE CONTINUED IN CHAPTER 2 - THE SHATTERED MARCH
+
+EMOTIONAL AND COMEDIC MOMENTS TO SCRIPT
+- Campfire scenes between missions with optional short skits:
+  - Lyria teaching Aric to laugh at himself.
+  - Zephyr and Kain betting on who can scout faster (both lose to Sera's discipline).
+  - Mirel helping Draven process survivor's guilt.
+- Mourning scene after Furnace Hall casualties.
+- Quiet confession scene: Aric admits fear of becoming a weapon for the wrong cause.
+
+OPEN THREADS FOR FUTURE CHAPTERS
+- Fate of Vex unresolved.
+- Crimson sky fracture expanding over Shattered Spire.
+- Royal loyalists split into factions; civil unrest begins.
+- Ember Warden (unit_011) and Vale Seer (unit_012) teased as future key allies or rivals.
+- The Lord Marshall's "higher power" remains unnamed for scalable future lore.
+
+IMPLEMENTATION HOOKS (LIGHTWEIGHT)
+- Add chapter/part metadata later to mission data:
+  - chapter_id: "chapter_1"
+  - part_id: "part_1" or "part_2"
+  - cutscene_key: optional
+- Keep story delivery modular:
+  - Pre-mission intro line
+  - Post-mission outcome line
+  - Optional camp dialogue node
+- Store major branch flags for future continuity:
+  - sawRoyalCipherClue
+  - trustLordMarshall
+  - vexFateKnown
+
+Draft Status
+- Chapter 1 draft complete (narrative spine, mission alignment, emotional beats, and cliffhangers).
+- Ready for next step: convert into cutscene scripts, dialogue packs, and in-game story JSON.
